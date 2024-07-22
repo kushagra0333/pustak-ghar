@@ -1,7 +1,8 @@
 {
-  "name": "pustak-ghar",
+  "name": "new",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kushagra0333.github.io/pustak-ghar",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
