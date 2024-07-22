@@ -6,7 +6,7 @@ import Home from "./pages/home"
 function App() {
   return (
     <div className="App">
-       <Router>
+       <Router basename="/pustak-ghar">
         <Header></Header>
         <div className="main">
           <Routes>
