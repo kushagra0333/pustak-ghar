@@ -1,5 +1,5 @@
 const NoHeaderPaths = () => {
-    return [];
+    return ["/login","/signup"];
   };
   
   export default NoHeaderPaths;
