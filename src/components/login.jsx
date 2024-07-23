@@ -90,7 +90,7 @@ const Login = () => {
                             Remember me
                         </label>
                     </div>
-                    <a href='/' className="btn btn-primary w-100 mb-3 py-2" type="submit">Log in</a>
+                    <a href='/pustakghar' className="btn btn-primary w-100 mb-3 py-2" type="submit">Log in</a>
                     <a href='/pustak-ghar/signup' className="btn btn-primary w-100 py-2" type="button">Create an Account</a>
                 </form>
             </div>
