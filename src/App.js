@@ -9,7 +9,7 @@ import Signup from "./components/signup";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/pustak-ghar">
         <Header />
         <div className="main">
           <Routes>
