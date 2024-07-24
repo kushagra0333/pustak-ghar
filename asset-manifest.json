@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pustak-ghar/static/css/main.6f1fe09f.css",
-    "main.js": "/pustak-ghar/static/js/main.9486ba7a.js",
-    "static/js/453.f0e33eac.chunk.js": "/pustak-ghar/static/js/453.f0e33eac.chunk.js",
-    "static/media/main-logo.jpg": "/pustak-ghar/static/media/main-logo.400bc9c7022174560af2.jpg",
-    "static/media/hero-image.jpeg": "/pustak-ghar/static/media/hero-image.8fe3e6e04852409b93aa.jpeg",
-    "index.html": "/pustak-ghar/index.html",
-    "main.6f1fe09f.css.map": "/pustak-ghar/static/css/main.6f1fe09f.css.map",
-    "main.9486ba7a.js.map": "/pustak-ghar/static/js/main.9486ba7a.js.map",
-    "453.f0e33eac.chunk.js.map": "/pustak-ghar/static/js/453.f0e33eac.chunk.js.map"
+    "main.css": "/static/css/main.6f1fe09f.css",
+    "main.js": "/static/js/main.c8f7c00c.js",
+    "static/js/453.f0e33eac.chunk.js": "/static/js/453.f0e33eac.chunk.js",
+    "static/media/main-logo.jpg": "/static/media/main-logo.400bc9c7022174560af2.jpg",
+    "static/media/hero-image.jpeg": "/static/media/hero-image.8fe3e6e04852409b93aa.jpeg",
+    "index.html": "/index.html",
+    "main.6f1fe09f.css.map": "/static/css/main.6f1fe09f.css.map",
+    "main.c8f7c00c.js.map": "/static/js/main.c8f7c00c.js.map",
+    "453.f0e33eac.chunk.js.map": "/static/js/453.f0e33eac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f1fe09f.css",
-    "static/js/main.9486ba7a.js"
+    "static/js/main.c8f7c00c.js"
   ]
 }
