@@ -46,7 +46,9 @@ const Login = () => {
             </Navbar>
             <div className="form-signin m-auto mt-5">
                 <form onSubmit={handleSubmit}>
+                    <Link to="/">
                     <img className="mb-4" src={Logo} alt="" width="72" height="57" />
+                    </Link>
                     <h1 className="h3 mb-3 fw-normal">Please Log in</h1>
 
                     <div className="form-floating">
@@ -60,7 +62,7 @@ const Login = () => {
                             onBlur={validateEmail}
                         />
                         <label htmlFor="floatingInput">Email address</label>
-                        {!emailValid && <div className="text-danger mb-3">Please enter a valid email address.</div>}
+                        {!emailValid && <div className="text-danger">Please enter a valid email address.</div>}
                     </div>
                     <div className="form-floating">
                         <input
@@ -73,7 +75,7 @@ const Login = () => {
                             onBlur={validatePassword}
                         />
                         <label htmlFor="floatingPassword">Password</label>
-                        {!passwordValid && <div className="text-danger mb-2">Please enter a password.</div>}
+                        {!passwordValid && <div className="text-danger ">Please enter a password.</div>}
                         <div className="input-group-append">
                             <button
                                 className="eye-btn"

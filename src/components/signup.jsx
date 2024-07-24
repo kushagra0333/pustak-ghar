@@ -66,7 +66,9 @@ const Signup = () => {
             </Navbar>
             <div className="form-signin m-auto mt-5">
                 <form onSubmit={handleSubmit}>
+                <Link to="/">
                     <img className="mb-4" src={Logo} alt="" width="72" height="57" />
+                    </Link>
                     <h1 className="h3 mb-3 fw-normal">Please Sign Up</h1>
                     <Row>
                         <Col sm>
@@ -81,7 +83,7 @@ const Signup = () => {
                                     onBlur={validateFirstName}
                                 />
                                 <label htmlFor="floatingInput">First Name</label>
-                                {!firstNameValid && <div className="text-danger mb-3">Invalid First Name.</div>}
+                                {!firstNameValid && <div className="text-danger ">Invalid First Name.</div>}
                             </div>
                         </Col>
                         <Col sm>
@@ -96,7 +98,7 @@ const Signup = () => {
                                     onBlur={validateLastName}
                                 />
                                 <label htmlFor="floatingInput">Last Name</label>
-                                {!lastNameValid && <div className="text-danger mb-3">Invalid Last Name.</div>}
+                                {!lastNameValid && <div className="text-danger">Invalid Last Name.</div>}
                             </div>
                         </Col>
                     </Row>
@@ -111,7 +113,7 @@ const Signup = () => {
                             onBlur={validateEmail}
                         />
                         <label htmlFor="floatingInput">Email address</label>
-                        {!emailValid && <div className="text-danger mb-3">Please enter a valid email address.</div>}
+                        {!emailValid && <div className="text-danger">Please enter a valid email address.</div>}
                     </div>
                     <div className="form-floating">
                         <input
@@ -124,7 +126,7 @@ const Signup = () => {
                             onBlur={validatePhoneNumber}
                         />
                         <label htmlFor="floatingInput">Phone Number</label>
-                        {!phoneNumberValid && <div className="text-danger mb-3">Please enter a valid phone number.</div>}
+                        {!phoneNumberValid && <div className="text-danger">Please enter a valid phone number.</div>}
                     </div>
 
                     <div className="form-floating">
@@ -138,7 +140,7 @@ const Signup = () => {
                             onBlur={validatePassword}
                         />
                         <label htmlFor="floatingPassword">Password</label>
-                        {!passwordValid && <div className="text-danger mb-2">Please enter a password.</div>}
+                        {!passwordValid && <div className="text-danger ">Please enter a password.</div>}
                         <div className="input-group-append">
                             <button
                                 className="eye-btn"
@@ -161,7 +163,7 @@ const Signup = () => {
                         />
                         <label htmlFor="floatingPassword">Confirm Password</label>
                         {(!confirmPasswordValid && confirmPassword !== '') && (
-                            <div className="text-danger mb-2">Passwords do not match.</div>
+                            <div className="text-danger ">Passwords do not match.</div>
                             )}
                         <div className="input-group-append">
                             <button
