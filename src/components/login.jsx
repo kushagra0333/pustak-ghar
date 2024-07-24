@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { Navbar, Nav, Container, NavDropdown, Row, Col } from 'react-bootstrap';
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/main-logo.jpg";
 import './login.css';
 
@@ -40,7 +41,7 @@ const Login = () => {
             <Navbar collapseOnSelect className="bg-white">
                 <Nav className="login-signup px-2 py-2">
                     If you don't have account,
-                    <Nav.Link href="/signup" className="signup-Button p-0 text-primary">Sign Up</Nav.Link>
+                    <Nav.Link as={Link} to="/signup" className="signup-Button p-0 text-primary">Sign Up</Nav.Link>
                 </Nav>
             </Navbar>
             <div className="form-signin m-auto mt-5">
@@ -90,8 +91,8 @@ const Login = () => {
                             Remember me
                         </label>
                     </div>
-                    <a href='/' className="btn btn-primary w-100 mb-3 py-2" type="submit">Log in</a>
-                    <a href='/signup' className="btn btn-primary w-100 py-2" type="button">Create an Account</a>
+                    <Link to='/' className="btn btn-primary w-100 mb-3 py-2" type="submit">Log in</Link>
+                    <Link to='/signup' className="btn btn-primary w-100 py-2" type="button">Create an Account</Link>
                 </form>
             </div>
         </div>

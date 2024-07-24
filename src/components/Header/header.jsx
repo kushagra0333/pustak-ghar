@@ -58,7 +58,7 @@ const Header = () => {
             <Nav.Link
               eventKey="2"
               as={Link}
-              to="/"
+              to="/about-us"
               onClick={scrollToTop}
             >
               About Us
@@ -73,9 +73,14 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav className="d-flex align-items-center px-2 py-2">
-          <a href="/login" rel="noreferrer noopener" className="login-Button btn btn-primary px-4">
-            Log in
-          </a>
+          <Link to="/login" rel="noreferrer noopener" className="login-Button btn btn-primary px-4">
+            Log In
+          </Link>
+          </Nav>
+          <Nav className="d-flex align-items-center px-2 py-2">
+          <Link to="/signup" rel="noreferrer noopener" className="login-Button btn btn-primary px-4">
+            Sign Up
+          </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

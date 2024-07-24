@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, NavDropdown, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/main-logo.jpg";
 import './signup.css';
 
@@ -60,7 +61,7 @@ const Signup = () => {
             <Navbar collapseOnSelect className="bg-white">
                 <Nav className="login-signup px-2 py-2">
                     If you have an account,
-                    <Nav.Link href="/login" className="login-Button p-0 text-primary">Log in</Nav.Link>
+                    <Nav.Link as={Link} to="/login" className="login-Button p-0 text-primary">Log in</Nav.Link>
                 </Nav>
             </Navbar>
             <div className="form-signin m-auto mt-5">
@@ -178,7 +179,7 @@ const Signup = () => {
                             Remember me
                         </label>
                     </div>
-                    <a href="/" className="btn btn-primary w-100 mb-3 py-2" type="submit">Sign Up</a>
+                    <Link to="/" className="btn btn-primary w-100 mb-3 py-2" type="submit">Sign Up</Link>
                 </form>
             </div>
         </div>

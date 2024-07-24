@@ -1,6 +1,7 @@
 import React from "react";
-import "./hero.css"
-import Boy from "../assets/hero-image.jpeg" 
+import "./hero.css";
+import { Link, useLocation } from "react-router-dom";
+import Boy from "../assets/hero-image.jpg";
 const Hero = () => {
   return (
     <div className="hero bg-black">
@@ -18,19 +19,19 @@ const Hero = () => {
           </div>
           <div class="col-lg-6 text-white ">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-              Responsive left-aligned hero with image
+            Your Next Great Read
             </h1>
             <p class="lead">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
+              Explore a vast collection of e-books across various genres and
+              subjects. Our platform offers high-quality, easy-to-read digital
+              books, perfect for your reading pleasure. Enjoy the convenience of
+              downloading your favorite titles instantly and start reading on
+              any device.
             </p>
             <div class="d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-5 m-auto">
-                Primary
-              </button>
-            
+              <Link to="/about-us" type="button" class="btn btn-primary btn-lg px-5 m-auto">
+                About Us
+              </Link>
             </div>
           </div>
         </div>
