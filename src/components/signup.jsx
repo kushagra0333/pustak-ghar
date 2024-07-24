@@ -178,7 +178,7 @@ const Signup = () => {
                             Remember me
                         </label>
                     </div>
-                    <a href="/pustak-ghar" className="btn btn-primary w-100 mb-3 py-2" type="submit">Sign Up</a>
+                    <a href="/" className="btn btn-primary w-100 mb-3 py-2" type="submit">Sign Up</a>
                 </form>
             </div>
         </div>
