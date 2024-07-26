@@ -76,7 +76,6 @@ const Signup = () => {
                                 <input
                                     type="text"
                                     className={`form-control ${firstNameValid ? '' : 'border border-danger'}`}
-                                    id="floatingInput"
                                     placeholder="First Name"
                                     value={firstName}
                                     onChange={(e) => setFirstName(e.target.value)}
@@ -91,7 +90,6 @@ const Signup = () => {
                                 <input
                                     type="text"
                                     className={`form-control ${lastNameValid ? '' : 'border border-danger'}`}
-                                    id="floatingInput"
                                     placeholder="Last Name"
                                     value={lastName}
                                     onChange={(e) => setLastName(e.target.value)}
@@ -106,7 +104,6 @@ const Signup = () => {
                         <input
                             type="email"
                             className={`form-control ${emailValid ? '' : 'border border-danger'}`}
-                            id="floatingInput"
                             placeholder="name@example.com"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -119,7 +116,6 @@ const Signup = () => {
                         <input
                             type="tel"
                             className={`form-control input-phone ${phoneNumberValid ? '' : 'border border-danger'}`}
-                            id="floatingInput"
                             placeholder="Phone Number"
                             value={phoneNumber}
                             onChange={(e) => setPhoneNumber(e.target.value)}
@@ -133,7 +129,6 @@ const Signup = () => {
                         <input
                             type={showPassword ? 'text' : 'password'}
                             className={`form-control ${passwordValid ? '' : 'border border-danger'}`}
-                            id="floatingPassword"
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -155,7 +150,6 @@ const Signup = () => {
                         <input
                             type={showPassword ? 'text' : 'password'}
                             className={`form-control ${confirmPasswordValid ? '' : 'border border-danger'}`}
-                            id="floatingPassword"
                             placeholder="Confirm Password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}

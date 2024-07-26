@@ -55,7 +55,6 @@ const Login = () => {
                         <input
                             type="email"
                             className={`form-control ${emailValid ? '' : 'border border-danger'}`}
-                            id="floatingInput"
                             placeholder="name@example.com"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -68,7 +67,6 @@ const Login = () => {
                         <input
                             type={showPassword ? 'text' : 'password'}
                             className={`form-control ${passwordValid ? '' : 'border border-danger'}`}
-                            id="floatingPassword"
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}

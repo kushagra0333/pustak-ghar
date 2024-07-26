@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+.slug-image{
+    height: 70vh;
+    width: 100%;
+}
+.slug-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 45px;
+}
