@@ -19,7 +19,7 @@ const Footer = () => {
             >
               <img src={Logo} alt="Pustak Ghar" className="logo fluid" />
             </Link>
-            <span className="mb-3 mb-md-0 text-muted">© 2024 Kushagra Pandey, Project</span>
+            <span className="mb-3 mb-md-0 text-muted">© 2024 Kushagra Pandey,Abhey Tiwari ,Arjav jain</span>
           </div>
 
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
