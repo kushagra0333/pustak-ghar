@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'books',
 
-  projectId: '4h0o3cu2',
+  projectId: 'rmd8itbg',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],

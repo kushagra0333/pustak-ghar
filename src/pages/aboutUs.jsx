@@ -1,7 +1,7 @@
 import { React } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./aboutUs.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const AboutUs = () => {
   return (
@@ -20,50 +20,57 @@ const AboutUs = () => {
       <div className="second-div py-4">
         <Container>
           <h1>What We Offer</h1>
-          <div className="inner-div px-5">
-            <Row>
-              <Col className="my-3 px-3 py-2 second-inner rounded" md={4}>
-                <h3>Extensive Library</h3>
-                <p>
-                  Our collection features thousands of e-books across various
-                  genres, including fiction, non-fiction, self-help, academic
-                  texts, and more.
-                </p>
-              </Col>
-              <Col
-                className="my-3 px-3 py-2 second-inner rounded"
-                md={{ span: 4, offset: 4 }}
-              >
-                {" "}
-                <h3>Quality Content</h3>
-                <p>
-                  We partner with authors and publishers to ensure that our
-                  e-books are of the highest quality, both in content and
-                  format.
-                </p>
-              </Col>
-            </Row>
-
-            <Row>
-              <Col className="my-3 px-3 py-2 second-inner rounded" md={4}>
-                <h3>Ease of Access</h3>
-                <p>
-                  Our user-friendly platform allows you to browse, purchase, and
-                  read e-books effortlessly on any device.
-                </p>
-              </Col>
-              <Col
-                className="my-3 px-3 py-2 second-inner rounded"
-                md={{ span: 4, offset: 4 }}
-              >
-                {" "}
-                <h3>EAffordable Prices</h3>
-                <p>
-                  We believe that great books should be accessible to everyone,
-                  which is why we offer our e-books at competitive prices.
-                </p>
-              </Col>
-            </Row>
+          <div className="inner-div m-4 px-5">
+          <Row className="g-2">
+          <Col lg={3} md={4} sm={6} className="offer-card">
+            <div className="m-2">
+              <Card className="h-100 bg-secondary text-white">
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+          <Col lg={3} md={4} sm={6} className="offer-card">
+            <div className="m-2">
+              <Card className="h-100 bg-secondary text-white">
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+          <Col lg={3} md={4} sm={6} className="offer-card">
+            <div className="m-2">
+              <Card className="h-100 bg-secondary text-white">
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+          <Col lg={3} md={4} sm={6} className="offer-card">
+            <div className="m-2">
+              <Card className="h-100 bg-secondary text-white">
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+        </Row>
           </div>
         </Container>
       </div>

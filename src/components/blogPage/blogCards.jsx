@@ -1,0 +1,48 @@
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import client from "../../client";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import './BlogCards.css'; // Assuming you have a CSS file for custom styles
+
+const BlogCards = () => {
+  const [BlogData, setBlogData] = useState(null);
+
+  useEffect(() => {
+    client.fetch(
+      `*[_type == 'post']{title, slug, mainImage{asset->{_id, url}}}`)
+      .then(data => setBlogData(data))
+      .catch(err => console.error(err));
+  }, []);
+
+  return (
+    <section className="offers m-5">
+      <Container className="offers-main">
+        <div className="offers-heading mt-3 mb-2">
+          <h1>Top Novels</h1>
+        </div>
+        <div className="row-wrapper">
+          <Row className="">
+            {BlogData && BlogData.slice(0, 7).map((post, index) => (
+              <Col key={index} className="col-lg-3 col-md-4 col-sm-6">
+                <div className="m-2">
+                  <Link className="link" to={'/' + post.slug.current} key={post.slug.current}>
+                    <Card className="h-100">
+                      <Card.Img variant="top" src={post.mainImage.asset.url} alt={post.title} />
+                      <Card.Body>
+                        <Card.Title>{post.title}</Card.Title>
+
+                      </Card.Body>
+                    </Card>
+                  </Link>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+export default BlogCards;

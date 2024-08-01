@@ -72,15 +72,10 @@ const Header = () => {
               Contact Us
             </Nav.Link>
           </Nav>
-          <Nav className="d-flex align-items-center px-2 py-2">
-          <Link to="/login" rel="noreferrer noopener" className="login-Button btn btn-primary px-4">
-            Log In
-          </Link>
-          </Nav>
-          <Nav className="d-flex align-items-center px-2 py-2">
-          <Link to="/signup" rel="noreferrer noopener" className="login-Button btn btn-primary px-4">
-            Sign Up
-          </Link>
+          <Nav className="d-flex main-menu align-items-center px-2 py-2">
+          <Nav.Link eventKey="4" as={Link} to="/login" rel="noreferrer noopener" className="">
+            Log In/Sign Up
+          </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
