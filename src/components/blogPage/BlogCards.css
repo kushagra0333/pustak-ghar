@@ -1,37 +1,38 @@
-.row-wrapper {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  .row-wrapper .row {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .offers-heading{
-    text-align: left;
-  }
-  .row-wrapper .col-lg-3 {
-    flex: 0 0 auto;
-    width: 18rem;
-  }
-  
-  .link {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .card {
-    width: 18rem;
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
-  }
-  
+.blogCard .row-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.blogCard .row-wrapper .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.blogCard .blogCard-heading {
+  text-align: left;
+}
+
+.blogCard .row-wrapper .blogCard-col-lg-3 {
+  flex: 0 0 auto;
+  width: 18rem;
+}
+
+.blogCard .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogCard .blogCard-card {
+  width: 18rem;
+}
+
+.blogCard .blogCard-card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.blogCard .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
