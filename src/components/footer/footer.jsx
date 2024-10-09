@@ -3,12 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import NoFooterPaths from "./NoFooterPaths";
 import "./footer.css";
 import Logo from "../../assets/main-logo.jpg";
+
 const Footer = () => {
   const { pathname } = useLocation();
 
   if (NoFooterPaths().includes(pathname)) {
     return null;
   }
+
   return (
     <footer className="main mt-4 pt-5 bg-black text-white">
       <div className="container ">
@@ -22,35 +24,25 @@ const Footer = () => {
                     <a
                       className="d-block d-lg-none stretched-link text-body"
                       data-bs-toggle="collapse"
-                      href="#collapseLanding"
+                      href="#collapseService" // Changed ID
                       role="button"
                       aria-expanded="false"
-                      aria-controls="collapseLanding"
+                      aria-controls="collapseService"
                     >
                       <i className="bi bi-chevron-down"></i>
                     </a>
                   </div>
                   <div
                     className="collapse d-lg-block"
-                    id="collapseLanding"
+                    id="collapseService" // Changed ID
                     data-bs-parent="#ft-links"
                   >
                     <ul className="list-unstyled mb-0 py-3 py-lg-0">
-                      <li className="mb-2">
-                      Free Books
-                      </li>
-                      <li className="mb-2">
-                      1000+ Books
-                      </li>
-                      <li className="mb-2">
-                      Easy Access
-                      </li>
-                      <li className="mb-2">
-                      24/7 Support
-                      </li>
-                      <li className="mb-2">
-                      100% Pivacy
-                      </li>
+                      <li className="mb-2">Free Books</li>
+                      <li className="mb-2">1000+ Books</li>
+                      <li className="mb-2">Easy Access</li>
+                      <li className="mb-2">24/7 Support</li>
+                      <li className="mb-2">100% Privacy</li>
                     </ul>
                   </div>
                 </div>
@@ -77,16 +69,36 @@ const Footer = () => {
                   >
                     <ul className="list-unstyled mb-0 py-3 py-lg-0">
                       <li className="mb-2">
-                      <Link to="/" className="text-white text-decoration-none">Home</Link>
+                        <Link
+                          to="/"
+                          className="text-white text-decoration-none"
+                        >
+                          Home
+                        </Link>
                       </li>
                       <li className="mb-2">
-                      <Link to="/" className="text-white text-decoration-none">Categories</Link>
+                        <Link
+                          to="/"
+                          className="text-white text-decoration-none"
+                        >
+                          Categories
+                        </Link>
                       </li>
                       <li className="mb-2">
-                      <Link to="/about-us" className="text-white text-decoration-none">About Us</Link>
+                        <Link
+                          to="/about-us"
+                          className="text-white text-decoration-none"
+                        >
+                          About Us
+                        </Link>
                       </li>
                       <li className="mb-2">
-                      <Link to="/" className="text-white text-decoration-none">Contact Us</Link>
+                        <Link
+                          to="/"
+                          className="text-white text-decoration-none"
+                        >
+                          Contact Us
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -112,56 +124,42 @@ const Footer = () => {
                   data-bs-parent="#ft-links"
                 >
                   <ul className="list-unstyled mb-0 py-3 py-lg-0">
-                    <li className="mb-2">
-                    React.js
-                    </li>
-                    <li className="mb-2">
-                      Sanity
-                    </li>
-                    <li className="mb-2">
-                    Bootstrap
-                    </li>
-                    <li className="mb-2">
-                    HTML
-                    </li>
-                    <li className="mb-2">
-                    CSS
-                    </li>
+                    <li className="mb-2">React.js</li>
+                    <li className="mb-2">Sanity</li>
+                    <li className="mb-2">Bootstrap</li>
+                    <li className="mb-2">HTML</li>
+                    <li className="mb-2">CSS</li>
                   </ul>
                 </div>
               </div>
               <div className="col-lg-3 col-12">
-              <div className="mb-3 pb-2 d-flex justify-content-between border-dark-subtle border-bottom border-bottom-lg-0">
+                <div className="position-relative">
+                  <div className="mb-3 pb-2 d-flex justify-content-between border-dark-subtle border-bottom border-bottom-lg-0">
                     <h4 className="text-white">Creators</h4>
                     <a
                       className="d-block d-lg-none stretched-link text-body"
                       data-bs-toggle="collapse"
-                      href="#collapseLanding"
+                      href="#collapseCreators" // Changed ID
                       role="button"
                       aria-expanded="false"
-                      aria-controls="collapseLanding"
+                      aria-controls="collapseCreators"
                     >
                       <i className="bi bi-chevron-down"></i>
                     </a>
                   </div>
                   <div
                     className="collapse d-lg-block"
-                    id="collapseLanding"
+                    id="collapseCreators" // Changed ID
                     data-bs-parent="#ft-links"
                   >
                     <ul className="list-unstyled mb-0 py-3 py-lg-0">
-                      <li className="mb-2">
-                      Kushagra Pandey
-                      </li>
-                      <li className="mb-2">
-                      Abhey Tiwari
-                      </li>
-                      <li className="mb-2">
-                      Arjav Jain
-                      </li>
+                      <li className="mb-2">Kushagra Pandey</li>
+                      <li className="mb-2">Arjav Jain</li>
+                      <li className="mb-2">Abhey Tiwari</li>
                     </ul>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
           <div className="col-lg-3 col-12">
@@ -185,8 +183,11 @@ const Footer = () => {
           <div className="col-md-9 col-lg-6">
             <div className="small mb-3 mb-lg-0 text-lg-center">
               Copyright © 2024
-              <span >
-               <Link to="/" cassName="text-primary">{" "}Pustak Ghar{" "}</Link>
+              <span>
+                <Link to="/" className="text-primary">
+                  {" "}
+                  Pustak Ghar{" "}
+                </Link>
               </span>
               | Project
             </div>
@@ -202,7 +203,7 @@ const Footer = () => {
                   className="bi bi-instagram"
                   viewBox="0 0 16 16"
                 >
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76c-.198.509-.33 1.091-.372 1.945C0 5.556 0 5.829 0 8s.01 2.444.048 3.297c.04.854.174 1.436.372 1.945.198.509.487.972.923 1.417a3.918 3.918 0 0 0 1.417.923c.509.198 1.091.33 1.945.372.853.039 1.126.048 3.297.048s2.444-.01 3.297-.048c.854-.04 1.436-.174 1.945-.372a3.913 3.913 0 0 0 1.417-.923 3.927 3.927 0 0 0 .923-1.417c.198-.509.33-1.091.372-1.945.039-.853.048-1.126.048-3.297s-.01-2.444-.048-3.297c-.04-.854-.174-1.436-.372-1.945a3.917 3.917 0 0 0-.923-1.417A3.918 3.918 0 0 0 13.24.42c-.509-.198-1.091-.33-1.945-.372C10.444 0 10.171 0 8 0Zm0 1.459c2.137 0 2.39.01 3.233.047.78.035 1.204.166 1.485.276.373.145.64.32.92.6.28.28.455.547.6.92.11.281.24.705.276 1.485.037.843.047 1.096.047 3.233s-.01 2.39-.047 3.233c-.035.78-.166 1.204-.276 1.485-.145.373-.32.64-.6.92-.28.28-.547.455-.92.6-.281.11-.705.24-1.485.276-.843.037-1.096.047-3.233.047s-2.39-.01-3.233-.047c-.78-.035-1.204-.166-1.485-.276a2.458 2.458 0 0 1-.92-.6 2.458 2.458 0 0 1-.6-.92c-.11-.281-.24-.705-.276-1.485-.037-.843-.047-1.096-.047-3.233s.01-2.39.047-3.233c.035-.78.166-1.204.276-1.485.145-.373.32-.64.6-.92.28-.28.547-.455.92-.6.281-.11.705-.24 1.485-.276.843-.037 1.096-.047 3.233-.047ZM8 3.889a4.111 4.111 0 1 0 0 8.222 4.111 4.111 0 0 0 0-8.222Zm0 1.459a2.652 2.652 0 1 1 0 5.304 2.652 2.652 0 0 1 0-5.304Zm5.223-.42a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92Z" />
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76c-.198.509-.33 1.091-.372 1.945C0 5.556 0 5.829 0 8s.01 2.444.048 3.297c.04.854.174 1.436.372 1.945.198.509.487.972.923 1.417a3.918 3.918 0 0 0 1.417.923c.509.198 1.091.33 1.945.372.853.039 1.126.048 3.297.048s2.444-.01 3.297-.048c.854-.04 1.436-.174 1.945-.372a3.913 3.913 0 0 0 1.417-.923 3.927 3.927 0 0 0 .923-1.417c.198-.509.33-1.091.372-1.945C16 10.444 16 10.171 16 8s-.01-2.444-.048-3.297c-.04-.854-.174-1.436-.372-1.945A3.913 3.913 0 0 0 14.576.42 3.927 3.927 0 0 0 13.16.048C12.307.01 11.724 0 8 0zm0 1.5c3.084 0 3.444.006 4.356.016.851.01 1.36.035 1.694.174.388.163.676.38.917.62.242.242.459.529.62.917.139.334.163.843.174 1.694.01.912.016 1.272.016 4.356s-.006 3.444-.016 4.356c-.01.851-.035 1.36-.174 1.694a2.91 2.91 0 0 1-.62.917 2.917 2.917 0 0 1-.917.62c-.334.139-.843.163-1.694.174-.912.01-1.272.016-4.356.016s-3.444-.006-4.356-.016c-.851-.01-1.36-.035-1.694-.174a2.911 2.911 0 0 1-.917-.62 2.91 2.91 0 0 1-.62-.917c-.139-.334-.163-.843-.174-1.694C1.506 11.444 1.5 11.084 1.5 8s.006-3.444.016-4.356c.01-.851.035-1.36.174-1.694A2.91 2.91 0 0 1 2.12.62a2.917 2.917 0 0 1 .917-.62c.334-.139.843-.163 1.694-.174C4.556 1.506 4.916 1.5 8 1.5zm0 5.6A2.4 2.4 0 1 0 8 10.5a2.4 2.4 0 0 0 0-4.4zm0 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zm3.51-4.973a.7.7 0 1 0-.02-1.4.7.7 0 0 0 .02 1.4z" />
                 </svg>
               </a>
               <a href="#!" className="text-reset btn btn-facebook btn-icon">
@@ -214,19 +215,7 @@ const Footer = () => {
                   className="bi bi-facebook"
                   viewBox="0 0 16 16"
                 >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 4.02 2.938 7.347 6.75 7.93v-5.62H4.897V8h1.852V6.291c0-1.837 1.096-2.85 2.769-2.85.803 0 1.646.144 1.646.144v1.811H9.953c-.915 0-1.2.57-1.2 1.152V8H11.6l-.297 2.31H8.75v5.62C12.563 15.348 16 12.02 16 8c0-4.42-3.58-8-8-8Z" />
-                </svg>
-              </a>
-              <a href="#!" className="text-reset btn btn-twitter btn-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="currentColor"
-                  className="bi bi-twitter"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M5.026 15C11.073 15 14.318 9.804 14.318 5.146c0-.172 0-.343-.012-.513A7.59 7.59 0 0 0 16 3.107a7.466 7.466 0 0 1-2.12.583 3.72 3.72 0 0 0 1.641-2.038 7.51 7.51 0 0 1-2.384.912A3.706 3.706 0 0 0 7.875 6.14a10.508 10.508 0 0 1-7.63-3.867 3.654 3.654 0 0 0-.5 1.865c0 1.289.656 2.426 1.656 3.095a3.695 3.695 0 0 1-1.68-.464v.047a3.707 3.707 0 0 0 2.965 3.632 3.716 3.716 0 0 1-.974.13 3.72 3.72 0 0 1-.698-.067 3.708 3.708 0 0 0 3.465 2.575A7.443 7.443 0 0 1 0 13.292a10.463 10.463 0 0 0 5.661 1.656" />
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 4.42 3.582 8 8 8 4.419 0 8-3.58 8-8 0-4.42-3.581-8-8-8zM8 15.5A7.5 7.5 0 1 1 8 1.5a7.5 7.5 0 0 1 0 14zm1.23-11.65h-1.1c-.175 0-.32.1-.32.265v1.102h1.414l-.185 1.462h-1.229V15.5H7.23v-5.302H6v-1.462h1.23V4.45c0-1.18.56-2.213 2.23-2.213 1.058 0 1.755.075 1.755.075v1.953h-1.029c-.513 0-.663.245-.663.655v.898h1.415l-.185 1.462z" />
                 </svg>
               </a>
             </div>

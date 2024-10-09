@@ -6,13 +6,15 @@
 .blogCard .row-wrapper .row {
   display: flex;
   flex-wrap: nowrap;
+  gap: 1rem; 
 }
 
 .blogCard .blogCard-heading {
   text-align: left;
+  font-family: 'Merriweather', serif;
 }
 
-.blogCard .row-wrapper .blogCard-col-lg-3 {
+.blogCard .row-wrapper .col-lg-3 {
   flex: 0 0 auto;
   width: 18rem;
 }
@@ -20,19 +22,48 @@
 .blogCard .link {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
+}
+
+.blogCard .link:hover {
+  transform: scale(1.02); 
 }
 
 .blogCard .blogCard-card {
-  width: 18rem;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.blogCard .blogCard-card:hover {
+  transform: translateY(-5px); 
 }
 
 .blogCard .blogCard-card-img-top {
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.blogCard .title {
+.blogCard .blogCard-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.blogCard .blogCard-card-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 0.5rem;
+  white-space: normal; 
+  overflow: hidden;  
+  word-wrap: break-word;
+}
+
+.blogCard .card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
 }
