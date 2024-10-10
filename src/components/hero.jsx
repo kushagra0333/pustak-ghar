@@ -29,7 +29,7 @@ const Hero = () => {
               any device.
             </p>
             <div className="d-md-flex justify-content-md-start">
-              <Link to="/about-us" type="button" className="btn btn-primary btn-lg px-5 m-auto">
+              <Link to="/about-us" className="btn btn-primary btn-lg px-5 m-auto">
                 About Us
               </Link>
             </div>

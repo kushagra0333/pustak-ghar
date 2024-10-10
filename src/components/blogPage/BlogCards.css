@@ -1,22 +1,25 @@
-.blogCard .row-wrapper {
+/* Wrapper to contain the scroll and add padding */
+.blogCard .blogCard-scroll-wrapper {
   overflow-x: auto;
   white-space: nowrap;
+  padding-bottom: 1rem;
 }
 
-.blogCard .row-wrapper .row {
+/* Scroll behavior */
+.blogCard .blogCard-scroll {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
-.blogCard .blogCard-heading {
-  text-align: left;
-  font-family: 'Merriweather', serif;
-}
-
-.blogCard .row-wrapper .col-lg-3 {
+.blogCard .blogCard-item {
+  display: inline-block;
   flex: 0 0 auto;
   width: 18rem;
+}
+
+.blogCard-heading {
+  text-align: left;
+  font-family: 'Merriweather', serif;
 }
 
 .blogCard .link {
@@ -26,18 +29,18 @@
 }
 
 .blogCard .link:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 .blogCard .blogCard-card {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .blogCard .blogCard-card:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 .blogCard .blogCard-card-img-top {
@@ -51,19 +54,52 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 .blogCard .blogCard-card-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 0.5rem;
-  white-space: normal; 
-  overflow: hidden;  
+  white-space: normal;
+  overflow: hidden;
   word-wrap: break-word;
 }
 
 .blogCard .card-text {
   font-size: 0.9rem;
   color: #6c757d;
+}
+
+/* Scrollbar styling */
+.blogCard .blogCard-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.blogCard .blogCard-scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.blogCard .blogCard-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .blogCard .blogCard-card-img-top {
+    height: 200px;
+  }
+
+  .blogCard .blogCard-card {
+    width: 90%;
+    margin: 0 auto; /* Center the card */
+  }
+
+  .blogCard .blogCard-card-title {
+    font-size: 1.1rem;
+  }
+
+  .blogCard .card-text {
+    font-size: 0.85rem;
+  }
 }
