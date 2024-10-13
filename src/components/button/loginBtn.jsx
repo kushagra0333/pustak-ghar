@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const Login = () => {
+const LoginBtn = () => {
   return (
     <section className="Login bg-black p-3">
       <Container>
@@ -17,4 +17,4 @@ const Login = () => {
     </section>
   );
 };
-export default Login;
+export default LoginBtn;

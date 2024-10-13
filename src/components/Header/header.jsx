@@ -50,7 +50,7 @@ const Header = () => {
             <Nav.Link
               eventKey="1"
               as={Link}
-              to="/"
+              to="/category"
               onClick={scrollToTop}
             >
               Category

@@ -1,0 +1,79 @@
+/* General Styling for Black-and-White Theme */
+body {
+  background-color: #1c1c1c;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styling */
+.category-sidebar {
+  background-color: #333;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Box shadow to differentiate columns */
+}
+
+.category-sidebar button {
+  color: white;
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+
+.category-sidebar button:hover {
+  background-color: #444;
+}
+
+/* Content Section Styling */
+.category-content {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  height: 100%; /* Full height for the content section */
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.category-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.category-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-section p {
+  color: #bbb;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.list-group-item {
+  padding: 15px;
+  background-color: #333;
+  border: none;
+  margin-bottom: 8px;
+}
+
+.list-group-item .btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+.list-group-item .btn:hover {
+  background-color: #555;
+}
