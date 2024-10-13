@@ -158,7 +158,7 @@ const Category = () => {
       break;
   }
   return (
-    <div className="container-fluid">
+    <div className="category-section container-fluid">
       <div className="row" style={{ height: "100vh" }}>
         <div className="col-md-4 category-sidebar">
           <button
