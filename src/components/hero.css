@@ -1,4 +1,6 @@
-
+.row,.column2{
+   overflow-x: hidden;
+}
 @media (max-width:980px) {
     .hero-image{
         display: none;

@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="row" id="ft-links">
               <div className="col-lg-3 col-12">
                 <div className="position-relative">
-                  <div className="mb-3 pb-2 d-flex justify-content-between border-dark-subtle border-bottom border-bottom-lg-0">
+                  <div className="mb-3 pb-2 d-flex justify-content-center border-dark-subtle border-bottom border-bottom-lg-0">
                     <h4 className="text-white">Service</h4>
                     <a
                       className="d-block d-lg-none stretched-link text-body"
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
               <div className="col-lg-3 col-12">
                 <div>
-                  <div className="mb-3 pb-2 d-flex justify-content-between border-dark-subtle border-bottom border-bottom-lg-0 position-relative">
+                  <div className="mb-3 pb-2 d-flex justify-content-center border-dark-subtle border-bottom border-bottom-lg-0 position-relative">
                     <h4 className="text-white">Pages</h4>
                     <a
                       className="d-block d-lg-none stretched-link text-body"
@@ -105,7 +105,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-lg-3 col-12">
-                <div className="mb-3 pb-2 d-flex justify-content-between border-dark-subtle border-bottom border-bottom-lg-0 position-relative">
+                <div className="mb-3 pb-2 d-flex justify-content-center border-dark-subtle border-bottom border-bottom-lg-0 position-relative">
                   <h4 className="text-white">Technology</h4>
                   <a
                     className="d-block d-lg-none stretched-link text-body"
@@ -134,7 +134,7 @@ const Footer = () => {
               </div>
               <div className="col-lg-3 col-12">
                 <div className="position-relative">
-                  <div className="mb-3 pb-2 d-flex justify-content-between border-dark-subtle border-bottom border-bottom-lg-0">
+                  <div className="mb-3 pb-2 d-flex justify-content-center border-dark-subtle border-bottom border-bottom-lg-0">
                     <h4 className="text-white">Creators</h4>
                     <a
                       className="d-block d-lg-none stretched-link text-body"
@@ -163,7 +163,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-3 col-12">
-            <div className="mt-4">
+            <div className="mt-4 ">
               <h4 className="text-white mb-4">Headquarters</h4>
               <p className="">
                 Codescandy, 412, Residency Rd, Shanthala Nagar, Ashok Nagar,
@@ -195,27 +195,26 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="text-md-end">
               <a href="#!" className="text-reset btn btn-instagram btn-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="currentColor"
-                  className="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76c-.198.509-.33 1.091-.372 1.945C0 5.556 0 5.829 0 8s.01 2.444.048 3.297c.04.854.174 1.436.372 1.945.198.509.487.972.923 1.417a3.918 3.918 0 0 0 1.417.923c.509.198 1.091.33 1.945.372.853.039 1.126.048 3.297.048s2.444-.01 3.297-.048c.854-.04 1.436-.174 1.945-.372a3.913 3.913 0 0 0 1.417-.923 3.927 3.927 0 0 0 .923-1.417c.198-.509.33-1.091.372-1.945C16 10.444 16 10.171 16 8s-.01-2.444-.048-3.297c-.04-.854-.174-1.436-.372-1.945A3.913 3.913 0 0 0 14.576.42 3.927 3.927 0 0 0 13.16.048C12.307.01 11.724 0 8 0zm0 1.5c3.084 0 3.444.006 4.356.016.851.01 1.36.035 1.694.174.388.163.676.38.917.62.242.242.459.529.62.917.139.334.163.843.174 1.694.01.912.016 1.272.016 4.356s-.006 3.444-.016 4.356c-.01.851-.035 1.36-.174 1.694a2.91 2.91 0 0 1-.62.917 2.917 2.917 0 0 1-.917.62c-.334.139-.843.163-1.694.174-.912.01-1.272.016-4.356.016s-3.444-.006-4.356-.016c-.851-.01-1.36-.035-1.694-.174a2.911 2.911 0 0 1-.917-.62 2.91 2.91 0 0 1-.62-.917c-.139-.334-.163-.843-.174-1.694C1.506 11.444 1.5 11.084 1.5 8s.006-3.444.016-4.356c.01-.851.035-1.36.174-1.694A2.91 2.91 0 0 1 2.12.62a2.917 2.917 0 0 1 .917-.62c.334-.139.843-.163 1.694-.174C4.556 1.506 4.916 1.5 8 1.5zm0 5.6A2.4 2.4 0 1 0 8 10.5a2.4 2.4 0 0 0 0-4.4zm0 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zm3.51-4.973a.7.7 0 1 0-.02-1.4.7.7 0 0 0 .02 1.4z" />
-                </svg>
+              <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      fill="currentColor"
+      className="bi bi-instagram text-white"
+      viewBox="0 0 16 16"
+    >
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
               </a>
               <a href="#!" className="text-reset btn btn-facebook btn-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  fill="currentColor"
-                  className="bi bi-facebook"
-                  viewBox="0 0 16 16"
+                  fill="white"
+                  viewBox="0 0 24 24"
                 >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 4.42 3.582 8 8 8 4.419 0 8-3.58 8-8 0-4.42-3.581-8-8-8zM8 15.5A7.5 7.5 0 1 1 8 1.5a7.5 7.5 0 0 1 0 14zm1.23-11.65h-1.1c-.175 0-.32.1-.32.265v1.102h1.414l-.185 1.462h-1.229V15.5H7.23v-5.302H6v-1.462h1.23V4.45c0-1.18.56-2.213 2.23-2.213 1.058 0 1.755.075 1.755.075v1.953h-1.029c-.513 0-.663.245-.663.655v.898h1.415l-.185 1.462z" />
+                  <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .732.592 1.324 1.325 1.324h11.495v-9.294h-3.13v-3.622h3.13v-2.671c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.762v2.313h3.587l-.467 3.622h-3.12v9.294h6.116c.732 0 1.324-.592 1.324-1.324v-21.35c0-.733-.592-1.325-1.324-1.325z" />
                 </svg>
               </a>
             </div>

@@ -66,7 +66,7 @@ const Header = () => {
             <Nav.Link
               eventKey="3"
               as={Link}
-              to="/"
+              to="/contact-us"
               onClick={scrollToTop}
             >
               Contact Us

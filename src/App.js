@@ -9,6 +9,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import AboutUs from "./pages/aboutUs"
 import Footer from "./components/footer/footer"
+import ContactUs from "./pages/contactUs"
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </div>
         <Footer />
