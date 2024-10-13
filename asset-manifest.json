@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pustak-ghar/static/css/main.e5d5f092.css",
-    "main.js": "/pustak-ghar/static/js/main.b8b7343d.js",
+    "main.css": "/pustak-ghar/static/css/main.5cd68f95.css",
+    "main.js": "/pustak-ghar/static/js/main.223148d8.js",
     "static/js/796.59e78e55.chunk.js": "/pustak-ghar/static/js/796.59e78e55.chunk.js",
     "static/js/165.4b6f763f.chunk.js": "/pustak-ghar/static/js/165.4b6f763f.chunk.js",
     "static/js/453.f0e33eac.chunk.js": "/pustak-ghar/static/js/453.f0e33eac.chunk.js",
@@ -10,14 +10,14 @@
     "static/media/hero-image.jpg": "/pustak-ghar/static/media/hero-image.fd2d92a34c7526dfe43b.jpg",
     "static/media/main-logo.jpg": "/pustak-ghar/static/media/main-logo.400bc9c7022174560af2.jpg",
     "index.html": "/pustak-ghar/index.html",
-    "main.e5d5f092.css.map": "/pustak-ghar/static/css/main.e5d5f092.css.map",
-    "main.b8b7343d.js.map": "/pustak-ghar/static/js/main.b8b7343d.js.map",
+    "main.5cd68f95.css.map": "/pustak-ghar/static/css/main.5cd68f95.css.map",
+    "main.223148d8.js.map": "/pustak-ghar/static/js/main.223148d8.js.map",
     "796.59e78e55.chunk.js.map": "/pustak-ghar/static/js/796.59e78e55.chunk.js.map",
     "165.4b6f763f.chunk.js.map": "/pustak-ghar/static/js/165.4b6f763f.chunk.js.map",
     "453.f0e33eac.chunk.js.map": "/pustak-ghar/static/js/453.f0e33eac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5d5f092.css",
-    "static/js/main.b8b7343d.js"
+    "static/css/main.5cd68f95.css",
+    "static/js/main.223148d8.js"
   ]
 }
