@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation ,useNavigate } from "react-router-dom";
 import Branches from "./Branches"; // Import your data here
-
+import "./SearchBook.css";
 const Branch = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const university = queryParams.get("university");
   const course = queryParams.get("course");
+  const navigate = useNavigate();
 
   const [branch, setBranch] = useState("");
   const [semester, setSemester] = useState("");
@@ -39,9 +40,15 @@ const Branch = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Selected Branch:", branch);
-    console.log("Selected Semester:", semester);
+    if (branch && semester) {
+      navigate(
+        `/subjects?university=${university}&course=${course}&branch=${branch}&semester=${semester}`
+      );
+    } else {
+      setError("Please select both branch and semester.");
+    }
   };
+  
 
   return (
     <div className="hero">
