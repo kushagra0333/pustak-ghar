@@ -6,7 +6,7 @@ const Branches = {
         {
           "course": "Btech",
           "branches": ["CSE", "IT", "ECE", "Mechanical", "Civil","EEE","Electrical"],
-          "semesters": [
+          "Years": [
             {
               "Year": "1st",
               "subjects": ["Math-I", "Physics","Workshop","EVS","Math-II", "Electronics", "Computer Programming","Mechanical","Chemistry","Soft skill"]
@@ -20,7 +20,7 @@ const Branches = {
         {
           "course": "BCA",
           "branches": ["IT", "DS", "AI"],
-          "semesters": [
+          "Years": [
             {
               "Year": "1st",
               "subjects": ["Basics of Programming", "Digital Logic", "Maths"]
@@ -39,10 +39,10 @@ const Branches = {
         {
           "course": "Btech",
           "branches": ["CSE", "IT", "ECE"],
-          "semesters": [
+          "Years": [
             {
               "Year": "1st",
-              "subjects": [Math-I", "Physics","Workshop","EVS","Math-II", "Electronics", "Computer Programming","Mechanical","Chemistry","Soft skill,C programming]
+              "subjects": ["Math-I", "Physics","Workshop","EVS","Math-II", "Electronics", "Computer Programming","Mechanical","Chemistry","Soft skill","C programming"]
             },
             {
               "Year": "2nd",
@@ -53,13 +53,13 @@ const Branches = {
         {
           "course": "MBA",
           "branches": ["Finance", "Marketing"],
-          "semesters": [
+          "Years": [
             {
-              "semester": "1st",
+              "Years": "1st",
               "subjects": ["Economics", "Accounting", "Marketing Principles"]
             },
             {
-              "semester": "2nd",
+              "Years": "2nd",
               "subjects": ["Financial Management", "HR Management", "Statistics"]
             }
           ]
@@ -72,27 +72,27 @@ const Branches = {
         {
           "course": "Bsc",
           "branches": ["Physics", "Chemistry", "Mathematics"],
-          "semesters": [
+          "Years": [
             {
               "semester": "1st",
-              "subjects": ["Mechanics", "Inorganic Chemistry", "Calculus"]
+              "Years": ["Mechanics", "Inorganic Chemistry", "Calculus"]
             },
             {
               "semester": "2nd",
-              "subjects": ["Electrodynamics", "Organic Chemistry", "Algebra"]
+              "Years": ["Electrodynamics", "Organic Chemistry", "Algebra"]
             }
           ]
         },
         {
           "course": "Bcom",
           "branches": ["Accounting", "Business Studies"],
-          "semesters": [
+          "Years": [
             {
-              "semester": "1st",
+              "Years": "1st",
               "subjects": ["Accounting Basics", "Microeconomics", "Statistics"]
             },
             {
-              "semester": "2nd",
+              "Years": "2nd",
               "subjects": ["Financial Accounting", "Macroeconomics", "Management"]
             }
           ]
