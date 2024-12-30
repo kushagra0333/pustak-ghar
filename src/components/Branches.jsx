@@ -5,18 +5,14 @@ const Branches = {
       "courses": [
         {
           "course": "Btech",
-          "branches": ["CSE", "IT", "ECE", "Mechanical", "Civil"],
+          "branches": ["CSE", "IT", "ECE", "Mechanical", "Civil","EEE","Electrical"],
           "semesters": [
             {
-              "semester": "1st",
-              "subjects": ["Maths", "Physics", "Chemistry", "Workshop"]
+              "Year": "1st",
+              "subjects": ["Math-I", "Physics","Workshop","EVS","Math-II", "Electronics", "Computer Programming","Mechanical","Chemistry","Soft skill"]
             },
             {
-              "semester": "2nd",
-              "subjects": ["Maths-II", "Electronics", "Computer Programming"]
-            },
-            {
-              "semester": "3rd",
+              "Year": "2nd",
               "subjects": ["Data Structures", "Operating Systems", "DBMS"]
             }
           ]
@@ -26,11 +22,11 @@ const Branches = {
           "branches": ["IT", "DS", "AI"],
           "semesters": [
             {
-              "semester": "1st",
+              "Year": "1st",
               "subjects": ["Basics of Programming", "Digital Logic", "Maths"]
             },
             {
-              "semester": "2nd",
+              "Year": "2nd",
               "subjects": ["Data Structures", "Computer Networks", "Statistics"]
             }
           ]
@@ -45,12 +41,12 @@ const Branches = {
           "branches": ["CSE", "IT", "ECE"],
           "semesters": [
             {
-              "semester": "1st",
-              "subjects": ["Maths", "Physics", "Chemistry", "Mechanics"]
+              "Year": "1st",
+              "subjects": [Math-I", "Physics","Workshop","EVS","Math-II", "Electronics", "Computer Programming","Mechanical","Chemistry","Soft skill,C programming]
             },
             {
-              "semester": "2nd",
-              "subjects": ["Discrete Mathematics", "Programming", "Electronics"]
+              "Year": "2nd",
+              "subjects": ["Discrete Mathematics/DSTL","DE","COA","Python","TC","DS"]
             }
           ]
         },
