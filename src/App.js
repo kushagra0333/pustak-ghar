@@ -14,7 +14,7 @@ function App() {
         <div className="main">
           <Routes>
             <Route path="/" element={<Search />} />
-            <Route path="/branch-semester" element={<Branch />} />
+            <Route path="/branch-year" element={<Branch />} />
             <Route path="/subjects" element={<SubjectsPage />} />
           </Routes>
         </div>

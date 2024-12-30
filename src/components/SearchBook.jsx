@@ -10,7 +10,7 @@ const Search = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Navigate to Branch page with university and course as query parameters
-    navigate(`/branch-semester?university=${university}&course=${course}`);
+    navigate(`/branch-year?university=${university}&course=${course}`); // Changed "semester" to "year"
   };
 
   return (

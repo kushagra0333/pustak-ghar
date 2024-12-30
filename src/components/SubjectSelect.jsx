@@ -9,29 +9,37 @@ const SubjectsPage = () => {
   const university = queryParams.get("university");
   const course = queryParams.get("course");
   const branch = queryParams.get("branch");
-  const semester = queryParams.get("semester");
+  const year = queryParams.get("year"); // Changed to 'year'
 
   const [subjects, setSubjects] = useState([]);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (university && course && branch && semester) {
+    if (university && course && branch && year) { // Changed to 'year'
       const universityData = Branches.universities.find(
         (uni) => uni.name === university
       );
+
       if (universityData) {
         const courseData = universityData.courses.find(
           (c) => c.course === course
         );
         if (courseData) {
-          const semesterData = courseData.semesters.find(
-            (sem) => sem.semester === semester
+          const branchData = courseData.branches.find(
+            (b) => b.branch === branch
           );
-          if (semesterData) {
-            setSubjects(semesterData.subjects || []);
+          if (branchData) {
+            const yearData = branchData.years.find(
+              (yearData) => yearData.year === year // Changed to 'year'
+            );
+            if (yearData) {
+              setSubjects(yearData.subjects || []);
+            } else {
+              setError("Invalid year selection."); // Changed to 'year'
+            }
           } else {
-            setError("Invalid semester selection.");
+            setError("This branch is not available in the selected course.");
           }
         } else {
           setError("This course is not available in the selected university.");
@@ -40,9 +48,9 @@ const SubjectsPage = () => {
         setError("This university is not available.");
       }
     } else {
-      setError("Missing parameters for university, course, branch, or semester.");
+      setError("Missing parameters for university, course, branch, or year."); // Changed to 'year'
     }
-  }, [university, course, branch, semester]);
+  }, [university, course, branch, year]);
 
   const handleSubjectClick = (subject) => {
     console.log("Selected Subject:", subject);
