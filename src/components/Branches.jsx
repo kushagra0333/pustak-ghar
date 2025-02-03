@@ -1,373 +1,164 @@
-const Branches = {
-  "universities": [
+const Branches ={
+  "universityName": "GGSIPU",
+  "courses": [
     {
-      "name": "GGSIPU",
-      "courses": [
+      "courseName": "Btech",
+      "branches": [
         {
-          "course": "Btech",
-          "branches": [
+          "branchName": "CSE",
+          "years": [
             {
-              "branch": "CSE",
-              "years": [
+              "year": "1st",
+              "subjects": [
                 {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Workshop"]
+                  "subjectName": "Maths",
+                  "Note": [
+                    {
+                      "title": "Note 1",
+                      "noteLink": "https://youtube.com"
+                    },
+                    {
+                      "title": "Note 2",
+                      "noteLink": "https://youtube.com"
+                    },
+                    {
+                      "title": "Note 3",
+                      "noteLink": "https://youtube.com"
+                    }
+                  ],
+                  "youtubeLink": {
+                    "title": "Maths Tutorial",
+                    "link": "https://youtube.com/maths-tutorial"
+                  },
+                  "PYQ": {
+                    "title": "Maths Previous Year Questions",
+                    "link": "https://link-to-maths-pyq"
+                  },
+                  "syllabus": {
+                    "title": "Maths Syllabus",
+                    "link": "https://link-to-maths-syllabus"
+                  }
                 },
-                {
-                  "year": "2nd",
-                  "subjects": ["Maths-II", "Electronics", "Computer Programming"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Data Structures", "Operating Systems", "DBMS"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Data Structures", "Operating Systems", "DBMS"]
-                }
-              ]
-            },
-            {
-              "branch": "IT",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Workshop"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Maths-II", "Electronics", "Computer Programming"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Data Structures", "Operating Systems", "DBMS"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Data Structures", "Operating Systems", "DBMS"]
-                }
-              ]
-            },
-            {
-              "branch": "ECE",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Workshop"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Maths-II", "Electronics", "Computer Programming"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Data Structures", "Operating Systems", "DBMS"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Data Structures", "Operating Systems", "DBMS"]
-                }
-              ]
-            },
-            {
-              "branch": "Mechanical",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Workshop"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Maths-II", "Engineering Mechanics", "Mechanical Drawing"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Thermodynamics", "Strength of Materials", "Fluid Mechanics"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Mechanical Vibrations", "Design Engineering", "Heat Transfer"]
-                }
-              ]
-            },
-            {
-              "branch": "Civil",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Workshop"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Surveying", "Building Materials", "Soil Mechanics"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Structural Analysis", "Fluid Mechanics", "Environmental Engineering"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Design of Structures", "Construction Management", "Highway Engineering"]
-                }
-              ]
-            }
-          ]
+{
+      "subjectName": "Maths",
+      "Note": [
+        {
+          "title": "Note 1",
+          "noteLink": "https://youtube.com"
         },
         {
-          "course": "BCA",
-          "branches": [
-            {
-              "branch": "IT",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Basics of Programming", "Digital Logic", "Maths"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Data Structures", "Computer Networks", "Statistics"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Database Management Systems", "Web Technologies", "Software Engineering"]
-                }
-              ]
-            },
-            {
-              "branch": "DS",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Programming Fundamentals", "Discrete Mathematics", "Maths"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Data Structures", "Algorithms", "Computer Graphics"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Machine Learning", "Big Data", "Data Mining"]
-                }
-              ]
-            },
-            {
-              "branch": "AI",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Introduction to Programming", "Mathematics", "AI Basics"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Data Structures", "Artificial Intelligence", "Neural Networks"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Machine Learning", "Natural Language Processing", "Robotics"]
-                }
-              ]
-            }
-          ]
+          "title": "Note 2",
+          "noteLink": "https://youtube.com"
+        },
+        {
+          "title": "Note 3",
+          "noteLink": "https://youtube.com"
         }
-      ]
+      ],
+      "youtubeLink": {
+        "title": "Maths Tutorial",
+        "link": "https://youtube.com/maths-tutorial"
+      },
+      "PYQ": {
+        "title": "Maths Previous Year Questions",
+        "link": "https://link-to-maths-pyq"
+      },
+      "syllabus": {
+        "title": "Maths Syllabus",
+        "link": "https://link-to-maths-syllabus"
+      }
     },
-    {
-      "name": "AKTU",
-      "courses": [
-        {
-          "course": "Btech",
-          "branches": [
-            {
-              "branch": "CSE",
-              "years": [
                 {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Mechanics"]
+                  "subjectName": "Chemistry",
+                  "notesPage": "https://link-to-chemistry-notes",
+                  "youtubeLink": "https://youtube.com/chemistry-tutorial",
+                  "PYQ": "https://link-to-chemistry-pyq",
+                  "syllabus": "https://link-to-chemistry-syllabus"
                 },
                 {
-                  "year": "2nd",
-                  "subjects": ["Discrete Mathematics", "Programming", "Electronics"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Data Structures", "Operating Systems", "Algorithms"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Software Engineering", "Design Patterns", "Database Management"]
+                  "subjectName": "Workshop",
+                  "notesPage": "https://link-to-workshop-notes",
+                  "youtubeLink": "https://youtube.com/workshop-tutorial",
+                  "PYQ": "https://link-to-workshop-pyq",
+                  "syllabus": "https://link-to-workshop-syllabus"
                 }
               ]
             },
             {
-              "branch": "IT",
-              "years": [
+              "year": "2nd",
+              "subjects": [
                 {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Mechanics"]
+                  "subjectName": "Maths-II",
+                  "notesPage": "https://link-to-maths-ii-notes",
+                  "youtubeLink": "https://youtube.com/maths-ii-tutorial",
+                  "PYQ": "https://link-to-maths-ii-pyq",
+                  "syllabus": "https://link-to-maths-ii-syllabus"
                 },
                 {
-                  "year": "2nd",
-                  "subjects": ["Discrete Mathematics", "Programming", "Electronics"]
+                  "subjectName": "Electronics",
+                  "notesPage": "https://link-to-electronics-notes",
+                  "youtubeLink": "https://youtube.com/electronics-tutorial",
+                  "PYQ": "https://link-to-electronics-pyq",
+                  "syllabus": "https://link-to-electronics-syllabus"
                 },
                 {
-                  "year": "3rd",
-                  "subjects": ["Data Structures", "Operating Systems", "Algorithms"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["Software Engineering", "Design Patterns", "Database Management"]
+                  "subjectName": "Computer Programming",
+                  "notesPage": "https://link-to-computer-programming-notes",
+                  "youtubeLink": "https://youtube.com/computer-programming-tutorial",
+                  "PYQ": "https://link-to-computer-programming-pyq",
+                  "syllabus": "https://link-to-computer-programming-syllabus"
                 }
               ]
             },
             {
-              "branch": "ECE",
-              "years": [
+              "year": "3rd",
+              "subjects": [
                 {
-                  "year": "1st",
-                  "subjects": ["Maths", "Physics", "Chemistry", "Mechanics"]
+                  "subjectName": "Data Structures",
+                  "notesPage": "https://link-to-data-structures-notes",
+                  "youtubeLink": "https://youtube.com/data-structures-tutorial",
+                  "PYQ": "https://link-to-data-structures-pyq",
+                  "syllabus": "https://link-to-data-structures-syllabus"
                 },
                 {
-                  "year": "2nd",
-                  "subjects": ["Digital Electronics", "Signal Processing", "Communication Systems"]
+                  "subjectName": "Operating Systems",
+                  "notesPage": "https://link-to-operating-systems-notes",
+                  "youtubeLink": "https://youtube.com/operating-systems-tutorial",
+                  "PYQ": "https://link-to-operating-systems-pyq",
+                  "syllabus": "https://link-to-operating-systems-syllabus"
                 },
                 {
-                  "year": "3rd",
-                  "subjects": ["Electromagnetic Theory", "Microprocessors", "Control Systems"]
-                },
-                {
-                  "year": "4th",
-                  "subjects": ["VLSI", "Robotics", "Embedded Systems"]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "course": "MBA",
-          "branches": [
-            {
-              "branch": "Finance",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Economics", "Accounting", "Marketing Principles"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Financial Management", "HR Management", "Statistics"]
+                  "subjectName": "DBMS",
+                  "notesPage": "https://link-to-dbms-notes",
+                  "youtubeLink": "https://youtube.com/dbms-tutorial",
+                  "PYQ": "https://link-to-dbms-pyq",
+                  "syllabus": "https://link-to-dbms-syllabus"
                 }
               ]
             },
             {
-              "branch": "Marketing",
-              "years": [
+              "year": "4th",
+              "subjects": [
                 {
-                  "year": "1st",
-                  "subjects": ["Marketing Management", "Business Communication", "Consumer Behavior"]
+                  "subjectName": "Data Structures",
+                  "notesPage": "https://link-to-data-structures-notes-4th",
+                  "youtubeLink": "https://youtube.com/data-structures-tutorial-4th",
+                  "PYQ": "https://link-to-data-structures-pyq-4th",
+                  "syllabus": "https://link-to-data-structures-syllabus-4th"
                 },
                 {
-                  "year": "2nd",
-                  "subjects": ["Advertising", "Sales Management", "Market Research"]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "DU",
-      "courses": [
-        {
-          "course": "Bsc",
-          "branches": [
-            {
-              "branch": "Physics",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Mechanics", "Inorganic Chemistry", "Calculus"]
+                  "subjectName": "Operating Systems",
+                  "notesPage": "https://link-to-operating-systems-notes-4th",
+                  "youtubeLink": "https://youtube.com/operating-systems-tutorial-4th",
+                  "PYQ": "https://link-to-operating-systems-pyq-4th",
+                  "syllabus": "https://link-to-operating-systems-syllabus-4th"
                 },
                 {
-                  "year": "2nd",
-                  "subjects": ["Electrodynamics", "Organic Chemistry", "Algebra"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Quantum Mechanics", "Thermodynamics", "Mathematical Methods"]
-                }
-              ]
-            },
-            {
-              "branch": "Chemistry",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Organic Chemistry", "Inorganic Chemistry", "Mathematics"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Physical Chemistry", "Analytical Chemistry", "Spectroscopy"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Environmental Chemistry", "Polymer Chemistry", "Industrial Chemistry"]
-                }
-              ]
-            },
-            {
-              "branch": "Mathematics",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Calculus", "Algebra", "Trigonometry"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Linear Algebra", "Differential Equations", "Complex Analysis"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Real Analysis", "Number Theory", "Abstract Algebra"]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "course": "Bcom",
-          "branches": [
-            {
-              "branch": "Accounting",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Accounting Basics", "Microeconomics", "Statistics"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Financial Accounting", "Macroeconomics", "Management"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Advanced Accounting", "Auditing", "Business Laws"]
-                }
-              ]
-            },
-            {
-              "branch": "Business Studies",
-              "years": [
-                {
-                  "year": "1st",
-                  "subjects": ["Business Environment", "Business Communication", "Principles of Management"]
-                },
-                {
-                  "year": "2nd",
-                  "subjects": ["Organizational Behavior", "Marketing Management", "Business Law"]
-                },
-                {
-                  "year": "3rd",
-                  "subjects": ["Financial Management", "Human Resource Management", "Entrepreneurship"]
+                  "subjectName": "DBMS",
+                  "notesPage": "https://link-to-dbms-notes-4th",
+                  "youtubeLink": "https://youtube.com/dbms-tutorial-4th",
+                  "PYQ": "https://link-to-dbms-pyq-4th",
+                  "syllabus": "https://link-to-dbms-syllabus-4th"
                 }
               ]
             }
@@ -377,6 +168,7 @@ const Branches = {
     }
   ]
 }
+
 
 
 export default Branches;

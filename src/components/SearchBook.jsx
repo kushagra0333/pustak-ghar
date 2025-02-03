@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Branches from "./Branches";
 import "./SearchBook.css";
 
 const Search = () => {
@@ -7,10 +8,17 @@ const Search = () => {
   const [course, setCourse] = useState("");
   const navigate = useNavigate();
 
+  // Extract university name dynamically
+  const universityName = Branches?.universityName;
+
+  // Check if courses exist and is an array before using map
+  const courses = Array.isArray(Branches?.courses) 
+    ? Branches.courses.map((course) => course.courseName) 
+    : [];
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Navigate to Branch page with university and course as query parameters
-    navigate(`/branch-year?university=${university}&course=${course}`); // Changed "semester" to "year"
+    navigate(`/branch-year?university=${university}&course=${course}`);
   };
 
   return (
@@ -36,9 +44,9 @@ const Search = () => {
                   onChange={(e) => setUniversity(e.target.value)}
                 >
                   <option value="">Select University</option>
-                  <option value="GGSIPU">GGSIPU</option>
-                  <option value="AKTU">AKTU</option>
-                  <option value="DU">DU</option>
+                  {universityName && (
+                    <option value={universityName}>{universityName}</option>
+                  )}
                 </select>
               </div>
               <div className="form-group mx-2 mb-3">
@@ -46,16 +54,20 @@ const Search = () => {
                   className="form-control"
                   value={course}
                   onChange={(e) => setCourse(e.target.value)}
+                  disabled={!university}
                 >
                   <option value="">Select Course</option>
-                  <option value="Btech">B.Tech</option>
-                  <option value="Bcom">B.Com</option>
-                  <option value="Bsc">B.Sc</option>
-                  <option value="BCA">BCA</option>
+                  {courses.length > 0 ? (
+                    courses.map((courseName, index) => (
+                      <option key={index} value={courseName}>{courseName}</option>
+                    ))
+                  ) : (
+                    <option>No courses available</option>
+                  )}
                 </select>
               </div>
               <div className="mt-3">
-                <button type="submit" className="btn btn-danger mx-2">
+                <button type="submit" className="btn btn-danger mx-2" disabled={!university || !course}>
                   Search
                 </button>
               </div>

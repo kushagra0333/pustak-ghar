@@ -13,35 +13,19 @@ const Branch = () => {
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState(""); // Changed to 'year'
   const [availableBranches, setAvailableBranches] = useState([]);
-  const [availableYears, setAvailableYears] = useState([]); // Changed to 'availableYears'
+  const [availableYears, setAvailableYears] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     if (university && course) {
-      // Find university data
-      const universityData = Branches.universities.find(
-        (uni) => uni.name === university
-      );
+      // Find course data
+      const courseData = Branches.courses.find((c) => c.courseName === course);
 
-      if (universityData) {
-        // Find course data
-        const courseData = universityData.courses.find(
-          (c) => c.course === course
-        );
-
-        if (courseData) {
-          // Set branches and years based on the selected course
-          setAvailableBranches(courseData.branches.map(branch => branch.branch));
-
-          // If branches are available, extract the years for the first branch
-          if (courseData.branches.length > 0) {
-            setAvailableYears(courseData.branches[0].years.map(year => year.year)); // Changed to 'year'
-          }
-        } else {
-          setError("This course is not available in the selected university.");
-        }
+      if (courseData) {
+        // Set branches and years based on the selected course
+        setAvailableBranches(courseData.branches.map(branch => branch.branchName));
       } else {
-        setError("This university is not available.");
+        setError("This course is not available.");
       }
     } else {
       setError("University or course is missing.");
@@ -50,12 +34,12 @@ const Branch = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (branch && year) { // Changed to 'year'
+    if (branch && year) {
       navigate(
-        `/subjects?university=${university}&course=${course}&branch=${branch}&year=${year}` // Changed to 'year'
+        `/subjects?university=${university}&course=${course}&branch=${branch}&year=${year}`
       );
     } else {
-      setError("Please select both branch and year."); // Changed to 'year'
+      setError("Please select both branch and year.");
     }
   };
 
@@ -63,15 +47,11 @@ const Branch = () => {
     const selectedBranch = e.target.value;
     setBranch(selectedBranch);
 
-    // Find the selected branch and set available years
-    const universityData = Branches.universities.find(uni => uni.name === university);
-    if (universityData) {
-      const courseData = universityData.courses.find(c => c.course === course);
-      if (courseData) {
-        const branchData = courseData.branches.find(b => b.branch === selectedBranch);
-        if (branchData) {
-          setAvailableYears(branchData.years.map(year => year.year)); // Changed to 'year'
-        }
+    const courseData = Branches.courses.find(c => c.courseName === course);
+    if (courseData) {
+      const branchData = courseData.branches.find(b => b.branchName === selectedBranch);
+      if (branchData) {
+        setAvailableYears(branchData.years.map(year => year.year));
       }
     }
   };
@@ -110,17 +90,17 @@ const Branch = () => {
                   <select
                     className="form-control"
                     value={year}
-                    onChange={(e) => setYear(e.target.value)} // Changed to 'year'
+                    onChange={(e) => setYear(e.target.value)}
                   >
-                    <option value="">Select Year</option> {/* Changed 'semester' to 'year' */}
+                    <option value="">Select Year</option>
                     {availableYears.length > 0 ? (
-                      availableYears.map((yearOption, index) => ( // Changed to 'year'
+                      availableYears.map((yearOption, index) => (
                         <option key={index} value={yearOption}>
                           {yearOption}
                         </option>
                       ))
                     ) : (
-                      <option value="">No years available</option> 
+                      <option value="">No years available</option>
                     )}
                   </select>
                 </div>
