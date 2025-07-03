@@ -13,12 +13,12 @@ function App() {
     <Router >
         <NavBar />
         <div className="main">
-          <Routes>
+          <Routes basename="/">
            <Route path="/" element={<Search />} />
   <Route path="/branch-year" element={<Branch />} />
   <Route path="/subjects" element={<SubjectsPage />} />
   <Route path="/content" element={<Content />} />
-  <Route path="*" element={<Search />} />
+
           </Routes>
         </div>
     </Router>
