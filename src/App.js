@@ -7,6 +7,7 @@ import SubjectsPage from "./components/SubjectSelect"
 import Content from "./components/Content"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import SubjectDetails from "./components/SubjectDetails";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
   <Route path="/branch-year" element={<Branch />} />
   <Route path="/subjects" element={<SubjectsPage />} />
   <Route path="/content" element={<Content />} />
+  <Route path="/subject-details" element={<SubjectDetails />} />
 
           </Routes>
         </div>
