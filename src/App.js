@@ -10,14 +10,15 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/pustak-ghar">
+    <Router >
         <NavBar />
         <div className="main">
           <Routes>
-            <Route path="/" element={<Search />} />
-            <Route path="/branch-year" element={<Branch />} />
-            <Route path="/subjects" element={<SubjectsPage />} />
-            <Route path="/contnet" element ={<Content />} />
+           <Route path="/" element={<Search />} />
+  <Route path="/branch-year" element={<Branch />} />
+  <Route path="/subjects" element={<SubjectsPage />} />
+  <Route path="/content" element={<Content />} />
+  <Route path="*" element={<Search />} />
           </Routes>
         </div>
     </Router>
