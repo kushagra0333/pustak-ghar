@@ -1,113 +1,108 @@
-# Pustak Ghar - Study Resources Platform
+# 📚 Pustak Ghar – Preserving Hindi & Regional Literature
 
 ## Overview
 
-Pustak Ghar is a comprehensive platform that provides free study materials, notes, previous year questions (PYQs), video playlists, and more for university students. The platform is designed to help students "Crush the Test and Unleash Success" by offering organized educational resources.
+Pustak Ghar is an **open-source initiative** dedicated to **promoting Indian literature and reading culture** by building a **digital library** of freely accessible **Hindi and regional language books**.
 
-## Features
+Our mission is to **preserve literary heritage** by curating, digitizing, and organizing books, poems, stories, and educational resources into a **structured, user-friendly platform** for readers, students, and literature enthusiasts.
 
-- **University/Course Selection**: Users can select their university and course to access relevant materials
-- **Branch/Year Navigation**: Filter resources by academic branch and year
-- **Subject-wise Resources**: Access notes, videos, PYQs, and syllabus for each subject
-- **Responsive Design**: Works on both desktop and mobile devices
-- **Modern UI**: Animated gradient background with clean interface
-
-## Technologies Used
-
-- **Frontend**: React.js
-- **Styling**: CSS with animations
-- **Routing**: React Router
-- **State Management**: React Hooks (useState, useEffect)
-- **Data Structure**: JSON-based resource organization
-
-## Project Structure
-
-```
-/src
-├── assets/                 # Image assets
-├── components/
-│   ├── Branches.jsx        # Main data structure
-│   ├── Content.jsx        # Subject content display
-│   ├── NavBar.jsx         # Navigation bar component
-│   ├── NoNavbarpath.jsx   # Paths without navbar
-│   ├── ResourcesData.jsx  # Additional resource data
-│   ├── SearchBook.jsx     # Main search component
-│   ├── SearchBranch.jsx   # Branch/year selection
-│   ├── SubjectSelect.jsx  # Subject selection
-│   └── SubjectDetails.jsx # Detailed subject view
-├── styles/
-│   ├── NavBar.css         # Navigation bar styling
-│   └── SearchBook.css     # Main page styling
-```
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/pustak-ghar.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd pustak-ghar
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-   ```bash
-   npm start
-   ```
-
-## Usage
-
-1. Select your university and course from the dropdown menus
-2. Choose your academic branch and year
-3. Browse available subjects
-4. Click on a subject to view all available resources:
-   - Notes
-   - Video tutorials
-   - Previous year questions
-   - Syllabus
-
-## Data Structure
-
-The platform uses a hierarchical JSON structure (`Branches.jsx`) to organize resources:
-
-```
-University → Courses → Branches → Years → Subjects → Resources
-```
-
-Each subject contains:
-- Notes (with titles and links)
-- YouTube tutorial links
-- Previous year questions
-- Syllabus information
-
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Future Enhancements
-
-- Add user authentication
-- Implement resource upload functionality
-- Add search across all resources
-- Include user ratings/reviews for resources
-- Expand university/course coverage
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+> ⚠️ **Important:** This repository is **not** the “Pustak Ghar – Study Resources Platform” project. Please ensure you are contributing to the correct repository.
 
 ---
+
+## 🎯 Project Goals
+
+* Preserve and promote **Hindi & regional literature**
+* Build a **digital library-style platform** accessible to everyone
+* Organize content into **categories**: Books, Poems, Stories, Educational Resources
+* Make the platform **aesthetically literary** with warm, inviting design
+* Ensure mobile-first accessibility and responsive design
+
+---
+
+## ✨ Features (Planned)
+
+* 📖 **Book & Content Categories** with search and filtering
+* 🎨 **Warm, literary-themed color palette** (cream, maroon, deep blue)
+* ✍️ **Typography inspired by printed literature**
+* 📱 **Responsive & accessible UI**
+* 📝 **About Page** highlighting mission and heritage preservation
+* 🌐 **Open contributions** for adding books, poems, and stories
+
+---
+
+## 🛠 Tech Stack
+
+* **Framework**: [Next.js](https://nextjs.org/) (recommended for combined frontend & backend development)
+* **Styling**: Tailwind CSS
+* **Database / Content Storage**: TBD (JSON, Markdown, or API integration)
+* **Deployment**: Vercel / Netlify
+
+---
+
+## 🚧 Current Status
+
+The current site design **does not reflect the actual vision** of the project.
+It resembles a **study resources platform** rather than a **digital literature library**.
+We are **completely redesigning** the UI and structure to align with the true mission.
+
+### 🔄 Redesign Guidelines
+
+* Replace current layout with **digital library UI**
+* Add sections for **Books, Poems, Stories, Educational Resources**
+* Implement **search filters & featured collections**
+* Use **literary color palette & typography**
+* Add **About page** describing project mission
+* Ensure **responsive & accessible design**
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/pustak-ghar-literature.git
+cd pustak-ghar-literature
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions!
+Please read the **[Contributing Guidelines](CONTRIBUTING.md)** before submitting a PR.
+
+You can contribute by:
+
+* Adding books, poems, or stories
+* Improving UI/UX
+* Working on backend features
+* Fixing bugs or improving accessibility
+
+---
+
+## 📌 Repository Link
+
+🔗 **GitHub Repo**: [Pustak Ghar – Preserving Hindi & Regional Literature](https://github.com/yourusername/pustak-ghar-literature)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+
+Do you want me to make that announcement draft next?
