@@ -1,69 +1,73 @@
-Contributing to Pustak Ghar – Preserving Hindi & Regional Literature
-Thank you for your interest in contributing! 🌸
-Pustak Ghar is an open-source initiative to preserve Hindi and regional literature by building a digital library of books, poems, stories, and educational resources.
-Your contributions can help us keep India’s literary heritage alive for future generations.
 
-📜 Code of Conduct
-We aim to maintain a warm, inclusive, and respectful environment.
-Please ensure your interactions are polite, collaborative, and constructive.
+# 📚 Pustak Ghar – Preserving Hindi & Regional Literature
 
-🛠 How You Can Contribute
-We welcome contributions in multiple areas:
+## Overview
+Pustak Ghar is an open-source initiative dedicated to promoting Indian literature and reading culture by building a digital library of freely accessible Hindi and regional language books.
 
-📚 Content Contributions
-Add books, poems, stories, or educational resources (in Hindi or other regional languages)
-Ensure content is public domain or has explicit permission for free distribution
-Provide metadata such as title, author, category, and language
-🎨 Design & UI/UX
-Help redesign the platform into a digital library-style interface
-Improve typography, color palette, and responsiveness
-Make accessibility improvements (ARIA roles, color contrast, keyboard navigation)
-💻 Development
-Implement search and filter functionality
-Add new sections (Books, Poems, Stories, Educational Resources)
-Work on backend/API integration for content storage
-Fix bugs or optimize performance
-🖋 Content Submission Guidelines
-Use UTF-8 encoding for Hindi and regional language text
-Store content in .json or .md format (depending on category)
-Keep filenames lowercase and use hyphens for spaces (e.g., premchand-godan.md)
-Include attribution and license information in the file header
-Example metadata for a poem (.md file):
+Our mission is to preserve literary heritage by curating, digitizing, and organizing books, poems, stories, and educational resources into a structured, user-friendly platform for readers, students, and literature enthusiasts.
 
----
-title: "गोदान"
-author: "मुंशी प्रेमचंद"
-language: "Hindi"
-category: "Book"
-license: "Public Domain"
----
+> ⚠️ Important: This repository is not the “Pustak Ghar – Study Resources Platform” project. Please ensure you are contributing to the correct repository.
 
-(Your text content here)
-📂 Project Setup
-Fork & Clone the repository
-git clone https://github.com/<your-username>/pustak-ghar-literature.git
+## 🎯 Project Goals
+- Preserve and promote Hindi & regional literature  
+- Build a digital library-style platform accessible to everyone  
+- Organize content into categories: Books, Poems, Stories, Educational Resources  
+- Make the platform aesthetically literary with warm, inviting design  
+- Ensure mobile-first accessibility and responsive design  
+
+## ✨ Features (Planned)
+- 📖 Book & Content Categories with search and filtering  
+- 🎨 Warm, literary-themed color palette (cream, maroon, deep blue)  
+- ✍️ Typography inspired by printed literature  
+- 📱 Responsive & accessible UI  
+- 📝 About Page highlighting mission and heritage preservation  
+- 🌐 Open contributions for adding books, poems, and stories  
+
+## 🛠 Tech Stack
+- **Framework:** Next.js (recommended for combined frontend & backend development)  
+- **Styling:** Tailwind CSS  
+- **Database / Content Storage:** TBD (JSON, Markdown, or API integration)  
+- **Deployment:** Vercel / Netlify  
+
+## 🚧 Current Status
+The current site design does not reflect the actual vision of the project. It resembles a study resources platform rather than a digital literature library. We are completely redesigning the UI and structure to align with the true mission.
+
+## 🔄 Redesign Guidelines
+- Replace current layout with digital library UI  
+- Add sections for Books, Poems, Stories, Educational Resources  
+- Implement search filters & featured collections  
+- Use literary color palette & typography  
+- Add About page describing project mission  
+- Ensure responsive & accessible design  
+
+## 🚀 Getting Started
+1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/yourusername/pustak-ghar-literature.git
 cd pustak-ghar-literature
-Install dependencies
+```
+
+2️⃣ **Install Dependencies**
+```bash
 npm install
-Start development server
+```
+
+3️⃣ **Run the Development Server**
+```bash
 npm run dev
-🌱 Branching & Commit Rules
-Branch naming convention:
+```
 
-feature/ → for new features
+## 🤝 Contributing
+We welcome contributions! Please read the Contributing Guidelines before submitting a PR.
 
-fix/ → for bug fixes
+You can contribute by:
+- Adding books, poems, or stories  
+- Improving UI/UX  
+- Working on backend features  
+- Fixing bugs or improving accessibility  
 
-content/ → for adding literature content
+## 📌 Repository Link
+🔗 GitHub Repo: [Pustak Ghar – Preserving Hindi & Regional Literature](https://github.com/yourusername/pustak-ghar-literature)
 
-📤 Submitting a Pull Request
-Push your branch to your fork:
-
-git push origin feature/search-filter
-Open a Pull Request (PR) to the main branch of this repository.
-
-Clearly describe:
-
-What changes you made
-Why they are needed
-Any relevant screenshots (for UI changes)
+## 📜 License
+This project is licensed under the MIT License — see the LICENSE file for details.
