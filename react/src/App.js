@@ -10,6 +10,7 @@ import "./App.css";
 import SubjectDetails from "./components/SubjectDetails";
 import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <ScrollToTop />
     </Router>
   );
 }
