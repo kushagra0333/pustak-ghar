@@ -114,7 +114,7 @@ Let’s **preserve our heritage together** 🚀🇮🇳
 A big **THANK YOU** to everyone who contributes to **Pustak Ghar** 🌸✨.  
 Your time, effort, and creativity help us **preserve India’s rich literary heritage** 📚🇮🇳.  
 
-![Thank You GIF](https://media.giphy.com/media/l0ExncehJzexFpRHq/giphy.gif)  
+![Thank You GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3A3YjA5N204bHJ0OXQ2MGNha2JrYnRkOXVvNWZ5aTZ3aHZxbWFtaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9Gp5ZwY8FRvna/giphy.gif)  
 
 ### 🌟 Contributors  
 
