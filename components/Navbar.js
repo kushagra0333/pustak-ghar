@@ -38,7 +38,7 @@ const Navbar = () => {
                                 Search
                             </Link>
                             <Link
-                                href="#about"
+                                href="/about"
                                 className="text-amber-800 hover:text-rose-700 transition-colors font-medium"
                             >
                                 About
