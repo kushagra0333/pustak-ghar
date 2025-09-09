@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import {
   ChevronRight,
@@ -19,11 +19,12 @@ import {
   Flame,
 } from "lucide-react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Homepage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const heroRef = useRef(null);
+  const heroRef = useRef(null); 
 
   useEffect(() => {
     // Mouse tracking for interactive effects
@@ -47,25 +48,29 @@ const Homepage = () => {
     {
       icon: <BookOpen className="w-12 h-12" />,
       title: "Vast Literary Treasury",
-      description: "10,000+ curated study materials across all subjects, inspired by India's rich literary heritage spanning from ancient epics to modern masterpieces",
+      description:
+        "10,000+ curated study materials across all subjects, inspired by India's rich literary heritage spanning from ancient epics to modern masterpieces",
       color: "from-amber-600 to-orange-700",
     },
     {
       icon: <Video className="w-12 h-12" />,
       title: "Wisdom Through Vision",
-      description: "HD video lectures from renowned educators following the ancient guru-shishya tradition of knowledge transmission",
+      description:
+        "HD video lectures from renowned educators following the ancient guru-shishya tradition of knowledge transmission",
       color: "from-emerald-600 to-teal-700",
     },
     {
       icon: <Scroll className="w-12 h-12" />,
       title: "Sacred Manuscripts Archive",
-      description: "Complete collection of previous papers with detailed solutions, preserving knowledge like ancient palm leaf manuscripts",
+      description:
+        "Complete collection of previous papers with detailed solutions, preserving knowledge like ancient palm leaf manuscripts",
       color: "from-rose-600 to-pink-700",
     },
     {
       icon: <Trophy className="w-12 h-12" />,
       title: "Path to Excellence",
-      description: "AI-powered progress tracking inspired by traditional Indian learning methodologies and philosophical approaches",
+      description:
+        "AI-powered progress tracking inspired by traditional Indian learning methodologies and philosophical approaches",
       color: "from-indigo-600 to-purple-700",
     },
   ];
@@ -93,9 +98,64 @@ const Homepage = () => {
       avatar: "SP",
     },
   ];
+  // 🔹 Local JSON data
+  const users = [
+    {
+      id: 1,
+      name: "Alice Johnson",
+      username: "@alice",
+      avatar:`https://avatar.iran.liara.run/public/boy?seed=1`,
+      bio: "Frontend developer passionate about React & design systems.",
+    },
+    {
+      id: 2,
+      name: "Bob Williams",
+      username: "@bob",
+      avatar: `https://avatar.iran.liara.run/public/boy?seed=2`,
+      bio: "Backend engineer who loves Node.js and scalable APIs.",
+    },
+    {
+      id: 3,
+      name: "Clara Davis",
+      username: "@clara",
+      avatar:`https://avatar.iran.liara.run/public/girl?seed=3`,
+      bio: "UI/UX designer focused on creating beautiful user experiences.",
+    },
+    {
+      id: 4,
+      name: "David Smith",
+      username: "@david",
+      avatar: `https://avatar.iran.liara.run/public/boy?seed=4`,
+      bio: "Full-stack dev who enjoys teaching coding to beginners.",
+    },
+  ]; 
+
+  // profile hover card
+  const [hoveredUser, setHoveredUser] = useState(null);
+  function ProfileHoverCard({ user }) {
+    return (
+      <div className="bg-white rounded-2xl shadow-2xl p-6 w-96 relative top-0.5 left-0.5">
+        <div className="flex items-center gap-4">
+          <img
+            src={user.avatar}
+            alt={user.name}
+            className="w-16 h-16 rounded-full bg-amber-900 border"
+          />
+          <div>
+            <h2 className="text-xl !text-amber-900 font-bold">{user.name}</h2>
+            <p className="text-sm text-pink-800">{user.username}</p>
+          </div>
+        </div>
+        <p className="mt-4 text-pink-600">{user.bio}</p>
+      </div>
+    );
+  }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-red-50 overflow-x-hidden" style={{ fontFamily: 'Crimson Text, Georgia, "Times New Roman", serif' }}>
+    <div
+      className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-red-50 overflow-x-hidden"
+      style={{ fontFamily: 'Crimson Text, Georgia, "Times New Roman", serif' }}
+    >
       {/* Floating Elements with Indian literary motifs */}
       <div
         className="fixed inset-0 pointer-events-none z-0"
@@ -112,7 +172,6 @@ const Homepage = () => {
       </div>
 
       {/* Header */}
-
 
       {/* Hero Section */}
       <section ref={heroRef} className="relative pt-24 pb-20 overflow-hidden">
@@ -134,7 +193,9 @@ const Homepage = () => {
 
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-black leading-tight">
-                  <span className="text-amber-900 block">Illuminate Your Mind</span>
+                  <span className="text-amber-900 block">
+                    Illuminate Your Mind
+                  </span>
                   <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent block">
                     Through Literature
                   </span>
@@ -146,7 +207,10 @@ const Homepage = () => {
               </div>
 
               <p className="text-lg text-amber-700 leading-relaxed max-w-lg">
-                Join 50,000+ students who have transformed their academic journey with our comprehensive study resources, expert guidance, and time-tested wisdom inspired by India&apos;s greatest literary traditions.
+                Join 50,000+ students who have transformed their academic
+                journey with our comprehensive study resources, expert guidance,
+                and time-tested wisdom inspired by India&apos;s greatest
+                literary traditions.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -155,19 +219,34 @@ const Homepage = () => {
                   Begin Your Journey
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <Link href="/search-book" className="border-2 border-amber-700 text-amber-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-amber-100 transition-colors">
+                <Link
+                  href="/search-book"
+                  className="border-2 border-amber-700 text-amber-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-amber-100 transition-colors"
+                >
                   Explore Library
                 </Link>
               </div>
 
-              <div className="flex items-center space-x-8 pt-4">
-                <div className="flex -space-x-2">
-                  {['A', 'B', 'C', 'D'].map((char, i) => (
+              <div className="flex items-center space-x-8 pt-4 relative">
+                <div className="relative flex -space-x-2">
+                  {users.map((user) => (
                     <div
-                      key={i}
-                      className="w-10 h-10 rounded-full bg-gradient-to-r from-emerald-600 to-teal-700 border-2 border-white flex items-center justify-center text-white text-sm font-bold shadow-md"
+                      key={user.id}
+                      className="relative"
+                      onMouseEnter={() => setHoveredUser(user)}
+                      onMouseLeave={() => setHoveredUser(null)}
                     >
-                      {char}
+                      <img
+                        src={user.avatar}
+                        alt={user.name}
+                        className="w-20 h-20 rounded-full bg-gradient-to-r from-emerald-600 to-teal-700 border-2 border-white flex items-center justify-center text-sm font-bold shadow-md cursor-pointer transition-transform"
+                      />
+                      <div className="absolute inset-0 z-[9999] top-10 left-0.5">
+                        {/* Centered Hover Card */}
+                        {hoveredUser?.id === user.id && (
+                          <ProfileHoverCard user={user} />
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -193,7 +272,9 @@ const Homepage = () => {
                       <h3 className="text-xl font-bold text-amber-900">
                         Today&apos;s Literary Journey
                       </h3>
-                      <p className="text-sm text-amber-700 italic">Curated Learning Path</p>
+                      <p className="text-sm text-amber-700 italic">
+                        Curated Learning Path
+                      </p>
                     </div>
                     <div className="w-12 h-12 bg-gradient-to-r from-emerald-600 to-teal-700 rounded-full flex items-center justify-center shadow-lg">
                       <BookOpen className="w-6 h-6 text-white" />
@@ -202,9 +283,18 @@ const Homepage = () => {
 
                   <div className="space-y-4">
                     {[
-                      { subject: "Epic Literature", detail: "Ramayana & Mahabharata" },
-                      { subject: "Modern Poetry", detail: "Tagore & Contemporary" },
-                      { subject: "Literary Criticism", detail: "Theory & Analysis" },
+                      {
+                        subject: "Epic Literature",
+                        detail: "Ramayana & Mahabharata",
+                      },
+                      {
+                        subject: "Modern Poetry",
+                        detail: "Tagore & Contemporary",
+                      },
+                      {
+                        subject: "Literary Criticism",
+                        detail: "Theory & Analysis",
+                      },
                     ].map((subject, i) => (
                       <div
                         key={i}
@@ -229,7 +319,9 @@ const Homepage = () => {
 
                   <div className="mt-6 pt-4 border-t border-amber-300">
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-amber-700 font-medium">Progress</span>
+                      <span className="text-amber-700 font-medium">
+                        Progress
+                      </span>
                       <span className="text-rose-700 font-bold">75%</span>
                     </div>
                     <div className="w-full bg-amber-200 rounded-full h-2">
@@ -260,13 +352,16 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-black mb-4">
-              <span className="text-amber-900 block">Everything You Need for</span>
+              <span className="text-amber-900 block">
+                Everything You Need for
+              </span>
               <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent">
                 Literary Excellence
               </span>
             </h2>
             <p className="text-lg text-amber-700 max-w-3xl mx-auto font-medium italic">
-              Our comprehensive platform merges cutting-edge technology with time-honored literary traditions
+              Our comprehensive platform merges cutting-edge technology with
+              time-honored literary traditions
             </p>
           </div>
 
@@ -352,10 +447,11 @@ const Homepage = () => {
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-3 h-3 rounded-full transition-colors ${index === currentTestimonial
-                    ? "bg-rose-600"
-                    : "bg-amber-400"
-                    }`}
+                  className={`w-3 h-3 rounded-full transition-colors ${
+                    index === currentTestimonial
+                      ? "bg-rose-600"
+                      : "bg-amber-400"
+                  }`}
                   onClick={() => setCurrentTestimonial(index)}
                 />
               ))}
@@ -381,7 +477,8 @@ const Homepage = () => {
             <span className="block">Your Literary Journey?</span>
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto italic">
-            Join thousands of successful students and begin your path to academic excellence through the wisdom of literature
+            Join thousands of successful students and begin your path to
+            academic excellence through the wisdom of literature
           </p>
           <button className="bg-white text-rose-700 px-12 py-4 rounded-2xl font-bold text-xl hover:bg-amber-50 transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
             Start Your Journey - It&apos;s Free!
@@ -403,7 +500,6 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };
