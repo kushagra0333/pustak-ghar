@@ -24,7 +24,6 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* Desktop Menu */}
                         <nav className="hidden md:flex items-center space-x-8">
                             <Link
                                 href="/"
@@ -44,18 +43,11 @@ const Navbar = () => {
                             >
                                 About
                             </Link>
-                            <Link
-                                href="/study-material"
-                                className="text-amber-800 hover:text-rose-700 transition-colors font-medium"
-                            >
-                                Study Material
-                            </Link>
                             <button className="bg-gradient-to-r from-rose-600 to-pink-700 text-white px-6 py-2.5 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 font-medium">
                                 Begin Journey
                             </button>
                         </nav>
 
-                        {/* Mobile Menu Toggle */}
                         <button
                             className="md:hidden p-2 text-amber-800"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -88,16 +80,10 @@ const Navbar = () => {
                                 Search
                             </Link>
                             <Link
-                                href="/about"
+                                href="#about"
                                 className="text-xl text-amber-800 hover:text-rose-700"
                             >
                                 About
-                            </Link>
-                            <Link
-                                href="/study-material"
-                                className="text-xl text-amber-800 hover:text-rose-700"
-                            >
-                                Study Material
                             </Link>
                             <button className="bg-gradient-to-r from-rose-600 to-pink-700 text-white py-3 rounded-full text-lg">
                                 Begin Journey

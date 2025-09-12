@@ -100,7 +100,7 @@ const Footer = () => {
                                 Help Center
                             </Link>
                             <Link
-                                href="/contact"
+                                href="#"
                                 className="block text-amber-200 hover:text-white transition-colors"
                             >
                                 Contact Us
