@@ -172,7 +172,20 @@ const Homepage = () => {
       </div>
 
       {/* Header */}
-
+         <div className="min-h-screen ...">
+    {/* Hover Card Rendering at Top*/}
+    {hoveredUser && (
+      <div
+        style={{
+          position: "fixed",
+          top: mousePosition.y + 5,
+          left: mousePosition.x + 5,
+          zIndex: 9999,
+        }}
+      >
+        <ProfileHoverCard user={hoveredUser} />
+      </div>
+    )}
       {/* Hero Section */}
       <section ref={heroRef} className="relative pt-24 pb-20 overflow-hidden">
         {/* Background Pattern inspired by Indian manuscripts */}
@@ -227,6 +240,7 @@ const Homepage = () => {
                 </Link>
               </div>
 
+              {/*user avatar*/}
               <div className="flex items-center space-x-8 pt-4 relative">
                 <div className="relative flex -space-x-2">
                   {users.map((user) => (
@@ -241,12 +255,6 @@ const Homepage = () => {
                         alt={user.name}
                         className="w-20 h-20 rounded-full bg-gradient-to-r from-emerald-600 to-teal-700 border-2 border-white flex items-center justify-center text-sm font-bold shadow-md cursor-pointer transition-transform"
                       />
-                      <div className="absolute inset-0 z-[9999] top-10 left-0.5">
-                        {/* Centered Hover Card */}
-                        {hoveredUser?.id === user.id && (
-                          <ProfileHoverCard user={user} />
-                        )}
-                      </div>
                     </div>
                   ))}
                 </div>
@@ -260,8 +268,8 @@ const Homepage = () => {
                     50,000+ Happy Scholars
                   </p>
                 </div>
-              </div>
-            </div>
+               </div>
+             </div>
 
             <div className="relative">
               <div className="relative z-10">
@@ -500,6 +508,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 };
