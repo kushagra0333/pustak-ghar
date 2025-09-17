@@ -492,20 +492,35 @@ const Homepage = () => {
             Start Your Journey - It&apos;s Free!
           </button>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold mb-2">✨ 100% Free</div>
-              <p className="opacity-80">Always free, no hidden costs</p>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">🚀 Instant Access</div>
-              <p className="opacity-80">Start learning immediately</p>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">📱 All Devices</div>
-              <p className="opacity-80">Works on phone, tablet, laptop</p>
-            </div>
-          </div>
+       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center">
+  {/* Card 1 */}
+  <div className="flex flex-col items-center justify-center h-48 max-w-md mx-auto p-6 rounded-xl bg-[#9e0d43] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#b60c4f] hover:shadow-[0_8px_24px_rgba(182,12,79,0.6)] hover:border hover:border-pink-500">
+    <div className="flex items-center gap-2 text-2xl font-bold mb-2 whitespace-nowrap transition-colors duration-300 hover:text-pink-200">
+      <span>✨</span>
+      <span>100% Free</span>
+    </div>
+    <p className="opacity-80 transition-opacity duration-300 hover:opacity-100">Always free, no hidden costs</p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="flex flex-col items-center justify-center h-48 max-w-md mx-auto p-6 rounded-xl bg-[#9e0d43] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#b60c4f] hover:shadow-[0_8px_24px_rgba(182,12,79,0.6)] hover:border hover:border-pink-500">
+    <div className="flex items-center gap-2 text-2xl font-bold mb-2 whitespace-nowrap transition-colors duration-300 hover:text-pink-200">
+      <span>🚀</span>
+      <span>Instant Access</span>
+    </div>
+    <p className="opacity-80 transition-opacity duration-300 hover:opacity-100">Start learning immediately</p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="flex flex-col items-center justify-center h-48 max-w-md mx-auto p-6 rounded-xl bg-[#9e0d43] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#b60c4f] hover:shadow-[0_8px_24px_rgba(182,12,79,0.6)] hover:border hover:border-pink-500">
+    <div className="flex items-center gap-2 text-2xl font-bold mb-2 whitespace-nowrap transition-colors duration-300 hover:text-pink-200">
+      <span>📱</span>
+      <span>All Devices</span>
+    </div>
+    <p className="opacity-80 transition-opacity duration-300 hover:opacity-100">Works on phone, tablet, laptop</p>
+  </div>
+</div>
+
         </div>
       </section>
     </div>
