@@ -488,9 +488,29 @@ const Homepage = () => {
             Join thousands of successful students and begin your path to
             academic excellence through the wisdom of literature
           </p>
-          <button className="bg-white text-rose-700 px-12 py-4 rounded-2xl font-bold text-xl hover:bg-amber-50 transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
-            Start Your Journey - It&apos;s Free!
-          </button>
+          <button className="
+  relative overflow-hidden px-12 py-4 rounded-2xl font-bold text-xl
+  bg-white text-rose-700 cursor-pointer
+  transition-all duration-400 ease-in-out
+  hover:scale-110 hover:-translate-y-2
+  hover:text-rose-900
+  hover:shadow-[0_10px_25px_rgba(219,39,119,0.6),0_0_15px_rgba(255,182,193,0.5)]
+  hover:bg-gradient-to-r hover:from-rose-100 hover:via-amber-50 hover:to-rose-100
+  hover:text-shadow-md
+">
+
+  Start Your Journey - It&apos;s Free!
+
+  {/* Shine sweep */}
+  <span className="
+    absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-transparent via-white/60 to-transparent
+    opacity-0 hover:opacity-80
+    pointer-events-none
+    animate-[shine_1.5s_linear_1]
+    transition-opacity duration-500
+  " />
+</button>
+
 
        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center">
   {/* Card 1 */}
