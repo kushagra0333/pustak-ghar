@@ -1,6 +1,6 @@
 'use client'
 
-import React, { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import React, { createContext, useContext, useEffect, useMemo, useState, useCallback } from 'react'
 import { auth } from '@/lib/firebase'
 import {
   onAuthStateChanged,
@@ -36,26 +36,31 @@ export default function AuthProvider({ children }) {
     return () => unsub()
   }, [])
 
+  const signInWithEmail = useCallback((email, password) => signInWithEmailAndPassword(auth, email, password), [])
+  const signUpWithEmail = useCallback(async (email, password, displayName) => {
+    const cred = await createUserWithEmailAndPassword(auth, email, password)
+    if (displayName) {
+      await updateProfile(cred.user, { displayName })
+    }
+    return cred
+  }, [])
+  const signInWithGoogle = useCallback(() => signInWithPopup(auth, googleProvider), [])
+  const logout = useCallback(() => signOut(auth), [])
+  const updateDisplayName = useCallback(async (newName) => {
+    if (!auth.currentUser) return
+    await updateProfile(auth.currentUser, { displayName: newName })
+    setUser({ ...auth.currentUser, displayName: newName })
+  }, [])
+
   const value = useMemo(() => ({
     user,
     loading,
-    signInWithEmail: (email, password) => signInWithEmailAndPassword(auth, email, password),
-    signUpWithEmail: async (email, password, displayName) => {
-      const cred = await createUserWithEmailAndPassword(auth, email, password)
-      if (displayName) {
-        await updateProfile(cred.user, { displayName })
-      }
-      return cred
-    },
-    signInWithGoogle: () => signInWithPopup(auth, googleProvider),
-    logout: () => signOut(auth),
-    updateDisplayName: async (newName) => {
-      if (!auth.currentUser) return
-      await updateProfile(auth.currentUser, { displayName: newName })
-      // Trigger state update so UI reflects the change immediately
-      setUser({ ...auth.currentUser, displayName: newName })
-    }
-  }), [user, loading])
+    signInWithEmail,
+    signUpWithEmail,
+    signInWithGoogle,
+    logout,
+    updateDisplayName
+  }), [user, loading, signInWithEmail, signUpWithEmail, signInWithGoogle, logout, updateDisplayName])
 
   return (
     <AuthContext.Provider value={value}>

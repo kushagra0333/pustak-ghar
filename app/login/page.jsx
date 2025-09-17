@@ -58,6 +58,9 @@ export default function LoginPage() {
       } else {
         setError(friendlyMessage(code, err?.message))
       }
+      // Clear sensitive fields after failure
+      setPassword('')
+      setConfirmPassword('')
     } finally {
       setLoading(false)
     }
