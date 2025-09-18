@@ -82,7 +82,7 @@ Our mission is to preserve literary heritage by curating, digitizing, and organi
   <b>This project is now OFFICIALLY accepted for:</b>
 </p>
 
-![GSSoC Logo](/pustak-ghar/react/src/assets/gssoc%20logo.png)
+![GSSoC Logo](/public/logo/gssoc-logo.png)
 
 🌟 **Exciting News...**
 
@@ -120,8 +120,8 @@ The current site design does not reflect the actual vision of the project. It re
 ## 🚀 Getting Started
 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/pustak-ghar-literature.git
-cd pustak-ghar-literature
+git clone https://github.com/kushagra0333/pustak-ghar.git
+cd pustak-ghar
 ```
 
 2️⃣ **Install Dependencies**
@@ -146,7 +146,7 @@ You can contribute by:
 - Fixing bugs or improving accessibility  
 
 ## 📌 Repository Link
-🔗 GitHub Repo: [Pustak Ghar – Preserving Hindi & Regional Literature](https://github.com/yourusername/pustak-ghar-literature)
+🔗 GitHub Repo: [Pustak Ghar – Preserving Hindi & Regional Literature](https://github.com/kushagra0333/pustak-ghar)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 

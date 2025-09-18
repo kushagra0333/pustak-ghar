@@ -1,11 +1,15 @@
 # 🤝 Contributing to Pustak Ghar – Preserving Hindi & Regional Literature  
 
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&logo=github)  
-![Made with ❤️ in India](https://img.shields.io/badge/Made%20with-❤️%20in%20India-orange?style=for-the-badge)  
-![GitHub issues](https://img.shields.io/github/issues/alizahh-7/pustak-gharr?style=flat-square)  
-![GitHub forks](https://img.shields.io/github/forks/alizahh-7/pustak-gharr?style=flat-square)  
-![GitHub stars](https://img.shields.io/github/stars/alizahh-7/pustak-gharr?style=flat-square)  
- 
+<p align="center">
+  <img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Made%20with-❤️%20in%20India-orange?style=for-the-badge" /> <br>
+  <img src="https://img.shields.io/github/issues/kushagra0333/pustak-ghar?style=flat-square" />
+  <img src="https://img.shields.io/github/forks/kushagra0333/pustak-ghar?style=flat-square" />
+  <img src="https://img.shields.io/github/stars/kushagra0333/pustak-ghar?style=flat-square" />
+</p>  
+
+---
+
 
 Thank you for your interest in contributing! 🌸✨  
 Pustak Ghar is an open-source initiative to **preserve Hindi and regional literature** 📚 by building a digital library of books, poems, stories, and educational resources.  
@@ -13,7 +17,9 @@ Your contributions can help us keep India’s literary heritage alive for future
 
 ![Books GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjB2YTc5MHg1cjBjMjd2NHB4ZTliY213Y3cxc215MXl4YXYxNnd1ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qJFNKmwkglLZPPOHd7/giphy.gif)  
 
+
 ---
+
 
 ## 📜 Code of Conduct  
 
@@ -22,9 +28,9 @@ Please ensure your interactions are **polite, collaborative, and constructive**.
 
 ---
 
-## 🛠️ How You Can Contribute  
+## 🛠️ How You Can Contribute
 
-We welcome contributions in multiple areas 🚀:  
+**We welcome contributions in multiple areas 🚀:**  
 
 ### 📚 Content Contributions  
 - Add **books, poems, stories, or educational resources** (in Hindi or other regional languages)  
@@ -55,21 +61,21 @@ We welcome contributions in multiple areas 🚀:
 
 📑 Example metadata for a poem (`.md` file):  
 
-```markdown
----
-title: "गोदान"
-author: "मुंशी प्रेमचंद"
-language: "Hindi"
-category: "Book"
-license: "Public Domain"
----
+```
+   title: "गोदान"
+   author: "मुंशी प्रेमचंद"
+   language: "Hindi"
+   category: "Book"
+   license: "Public Domain"
+```
+--- 
 
 ## 📂 Project Setup
 
-1. Fork & Clone the repository 🍴  
+1. Fork & Clone the repository 🍴
 ```bash
-   git clone https://github.com/<your-username>/pustak-ghar-literature.git
-   cd pustak-ghar-literature
+   git clone https://github.com/<your-username>/pustak-ghar.git
+   cd pustak-ghar
 ```
 2. Install dependencies 📦  
 ```bash
@@ -113,15 +119,18 @@ Let’s **preserve our heritage together** 🚀🇮🇳
 
 A big **THANK YOU** to everyone who contributes to **Pustak Ghar** 🌸✨.  
 Your time, effort, and creativity help us **preserve India’s rich literary heritage** 📚🇮🇳.  
+<p align=center >
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3A3YjA5N204bHJ0OXQ2MGNha2JrYnRkOXVvNWZ5aTZ3aHZxbWFtaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9Gp5ZwY8FRvna/giphy.gif"/>  
 
-![Thank You GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3A3YjA5N204bHJ0OXQ2MGNha2JrYnRkOXVvNWZ5aTZ3aHZxbWFtaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9Gp5ZwY8FRvna/giphy.gif)  
+</p>
 
 ### 🌟 Contributors  
 
 Thanks to these amazing people for their contributions 💕  
 
-<a href="https://github.com/alizahh-7/pustak-gharr/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=alizahh-7/pustak-gharr" />
+
+<a href="https://github.com/kushagra0333/pustak-ghar/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kushagra0333/pustak-ghar" />
 </a>  
 
 Made with [contrib.rocks](https://contrib.rocks) ✨  
