@@ -116,10 +116,10 @@ const Footer = () => {
                                 Contact Us
                             </Link>
                             <Link
-                                href="#"
+                                href="/privacy-policy"
                                 className="block text-amber-200 hover:text-white transition-colors"
                             >
-                                <i class="fa-solid fa-shield-halved mr-2"></i>
+                                <i className="fa-solid fa-shield-halved mr-2"></i>
                                 Privacy Policy
                             </Link>
                             <Link
