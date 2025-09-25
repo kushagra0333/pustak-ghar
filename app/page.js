@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import FeedbackSection from "@/components/FeedbackSection";
 
 const Homepage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -543,6 +544,9 @@ const Homepage = () => {
 
         </div>
       </section>
+
+      {/* Feedback & Reviews Section */}
+      <FeedbackSection />
     </div>
     </div>
   );
