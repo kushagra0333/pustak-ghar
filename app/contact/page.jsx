@@ -36,7 +36,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form */}
             <div className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl border-2 border-amber-200 dark:border-amber-600 animate-slide-up">
-              <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-rose-600 to-pink-700 rounded-br-3xl flex items-center justify-center transform -translate-y-2 -translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-rose-600 to-pink-700 rounded-br-3xl flex items-center justify-center transform -translate-y-2 -translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-300">
                 <i className="fa-solid fa-envelope text-white text-2xl"></i>
               </div>
               
