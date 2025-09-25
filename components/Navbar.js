@@ -43,6 +43,12 @@ const Navbar = () => {
                             >
                                 About
                             </Link>
+                            <Link
+                                href="/faq"
+                                className="text-amber-800 hover:text-rose-700 transition-colors font-medium"
+                            >
+                                FAQ
+                            </Link>
                             <button className="bg-gradient-to-r from-rose-600 to-pink-700 text-white px-6 py-2.5 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 font-medium">
                                 Begin Journey
                             </button>
@@ -80,10 +86,16 @@ const Navbar = () => {
                                 Search
                             </Link>
                             <Link
-                                href="#about"
+                                href="/about"
                                 className="text-xl text-amber-800 hover:text-rose-700"
                             >
                                 About
+                            </Link>
+                            <Link
+                                href="/faq"
+                                className="text-xl text-amber-800 hover:text-rose-700"
+                            >
+                                FAQ
                             </Link>
                             <button className="bg-gradient-to-r from-rose-600 to-pink-700 text-white py-3 rounded-full text-lg">
                                 Begin Journey
