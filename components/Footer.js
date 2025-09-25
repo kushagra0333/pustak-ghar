@@ -109,7 +109,6 @@ const Footer = () => {
                                 Help Center
                             </Link>
                             <Link
-                                href="#"
                                 className="block text-amber-200 hover:text-white transition-colors"
                             >
                                 <i className="fa-solid fa-headset mr-2"></i>
