@@ -1,13 +1,14 @@
 import { Feather } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import NewsletterSubscription from './NewsletterSubscription'
 
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-br from-amber-900 via-orange-900 to-red-900 text-white py-16">
             <div className="max-w-7xl mx-auto px-5">
-                <div className="grid lg:grid-cols-4 gap-8">
-                    <div className="pl-16">
+                <div className="grid lg:grid-cols-5 gap-6">
+                    <div className="pl-8">
                         <div className="flex items-center space-x-3 mb-8">
                             <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-xl flex items-center justify-center shadow-lg">
                                 <Feather className="w-7 h-7 text-amber-900" />
@@ -22,9 +23,27 @@ const Footer = () => {
                         <p className="text-amber-200 leading-relaxed italic">
                             Empowering students across India with free, high-quality educational resources and proven literary methodologies that illuminate the path to knowledge.
                         </p>
+                        
+                        {/* Social Links */}
+                        <div className="mt-8">
+                            <h4 className="text-lg font-bold text-amber-400 mb-4">
+                                Social
+                            </h4>
+                            <div className="flex space-x-4">
+                                <a href="https://github.com/kushagra0333/pustak-ghar" target="_blank" rel="noopener noreferrer" className="group">
+                                    <i className="fab fa-github text-2xl text-amber-300 hover:text-white transition-all duration-200 group-hover:scale-110"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="group">
+                                    <i className="fab fa-linkedin-in text-2xl text-amber-300 hover:text-white transition-all duration-200 group-hover:scale-110"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="group">
+                                    <i className="fab fa-x-twitter text-2xl text-amber-300 hover:text-white transition-all duration-200 group-hover:scale-110"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className= "pl-16">
+                    <div className= "pl-6">
                         <h4 className="text-lg font-bold mb-6 text-amber-400">
                             Quick Links
                         </h4>
@@ -60,7 +79,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className= "pl-16">
+                    <div className= "pl-6">
                         <h4 className="text-lg font-bold mb-6 text-amber-400">
                             Literary Subjects
                         </h4>
@@ -96,7 +115,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="pl-16">
+                    <div className="pl-6">
                         <h4 className="text-lg font-bold mb-6 text-amber-400">
                             Support
                         </h4>
@@ -132,21 +151,11 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex space-x-4 mt-2 pl-16">
-                            <h4 className="text-lg font-bold mb-6 text-amber-400">
-                            Socials
-                            </h4>
-
-                            <a href="https://github.com/kushagra0333/pustak-ghar" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-github text-2xl text-amber-300 hover:text-white transition-colors"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin-in text-2xl text-amber-300 hover:text-white transition-colors"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-x-twitter text-2xl text-amber-300 hover:text-white transition-colors"></i>
-                            </a>
+                    {/* Newsletter Subscription */}
+                    <div className="pl-6">
+                        <NewsletterSubscription />
                     </div>
+
                     
 
                 </div>
