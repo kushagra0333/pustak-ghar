@@ -105,3 +105,51 @@ body {
   animation-delay: 5s;
   animation-iteration-count: 1;
 }
+
+/* Newsletter-specific animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(245, 158, 11, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.6), 0 0 30px rgba(245, 158, 11, 0.4);
+  }
+}
+
+@keyframes newsletter-success {
+  0% {
+    transform: scale(0.8) rotateY(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1) rotateY(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-newsletter-success {
+  animation: newsletter-success 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
