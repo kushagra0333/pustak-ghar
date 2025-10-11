@@ -422,7 +422,7 @@ const Homepage = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border-4 border-amber-300">
+            <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border-4 border-amber-300 min-h-[420px] flex flex-col justify-between">
               <div className="flex items-center justify-center mb-8">
                 <div className="flex text-yellow-600">
                   {[...Array(testimonials[currentTestimonial].rating)].map(
