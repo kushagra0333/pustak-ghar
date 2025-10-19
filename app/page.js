@@ -357,54 +357,56 @@ const Homepage = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-black mb-4">
-              <span className="text-amber-900 block">
-                Everything You Need for
-              </span>
-              <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent">
-                Literary Excellence
-              </span>
-            </h2>
-            <p className="text-lg text-amber-700 max-w-3xl mx-auto font-medium italic">
-              Our comprehensive platform merges cutting-edge technology with
-              time-honored literary traditions
-            </p>
-          </div>
+<section id="features" className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl lg:text-5xl font-black mb-4">
+        <span className="text-amber-900 block">
+          Everything You Need for
+        </span>
+        <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent">
+          Literary Excellence
+        </span>
+      </h2>
+      <p className="text-lg text-amber-700 max-w-3xl mx-auto font-medium italic">
+        Our comprehensive platform merges cutting-edge technology with
+        time-honored literary traditions
+      </p>
+    </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="group relative overflow-hidden">
-                <div className="bg-white border-2 border-amber-300 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 hover:border-rose-400">
-                  <div className="flex items-start space-x-6">
-                    <div
-                      className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-                    >
-                      {feature.icon}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-amber-900 mb-3">
-                        {feature.title}
-                      </h3>
-                      <p className="text-amber-700 leading-relaxed">
-                        {feature.description}
-                      </p>
-                      <div className="mt-4">
-                        <span className="inline-flex items-center text-rose-700 font-semibold group-hover:text-pink-800 transition-colors">
-                          Explore More{" "}
-                          <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+    <div className="grid lg:grid-cols-2 gap-8">
+      {features.map((feature, index) => (
+        // 👇 THIS IS THE LINE TO CHANGE
+        <div key={index} className="group relative overflow-hidden pt-2">
+          <div className="bg-white border-2 border-amber-300 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 hover:border-rose-400">
+            {/* ... Rest of your card content ... */}
+            <div className="flex items-start space-x-6">
+              <div
+                className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+              >
+                {feature.icon}
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-amber-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-amber-700 leading-relaxed">
+                  {feature.description}
+                </p>
+                <div className="mt-4">
+                  <span className="inline-flex items-center text-rose-700 font-semibold group-hover:text-pink-800 transition-colors">
+                    Explore More{" "}
+                    <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </span>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Testimonials Section */}
       <section
